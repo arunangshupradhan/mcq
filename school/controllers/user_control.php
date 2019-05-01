@@ -17,7 +17,6 @@ class User_control extends CI_Controller
 
     public function index($message = '')
     {
-
         $data = array();
         $data['class'] = 11; // class control value left digit for main manu rigt digit for submenu
         $data['header'] = $this->load->view('header/admin_head', $data, TRUE);
@@ -47,9 +46,6 @@ class User_control extends CI_Controller
 
     public function user_add_form($message = '')
     {
-        if ($this->session->userdata('user_id') != 6) {
-            redirect(base_url());
-        }
         $data = array();
         $data['class'] = 12; // class control value left digit for main manu rigt digit for submenu
         $data['header'] = $this->load->view('header/admin_head', $data, TRUE);

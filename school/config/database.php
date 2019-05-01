@@ -35,13 +35,13 @@
 */
 
 // The following values will probably need to be changed.
-$db['default']['username'] = "root";
-$db['default']['password'] = "root";
-$db['default']['database'] = "mcq";
+$db['default']['username'] = "phtorial_user";
+$db['default']['password'] = "@phtorial_user@";
+$db['default']['database'] = "phtorial_school";
 
 // The following values can probably stay the same.
 $db['default']['hostname'] = "localhost";
-$db['default']['dbdriver'] = "mysqli";
+$db['default']['dbdriver'] = "mysql";
 $db['default']['dbprefix'] = "";
 $db['default']['pconnect'] = TRUE;
 $db['default']['db_debug'] = TRUE;
