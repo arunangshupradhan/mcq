@@ -1,0 +1,1109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1c13c3f6-f42a-4ce6-8150-cba052d297e2" name="Default Changelist" comment="main files">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/mcq.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/X-editable/css/bootstrap-editable.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/X-editable/img/clear.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/X-editable/img/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/X-editable/js/bootstrap-editable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/X-editable/js/bootstrap-editable.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/bootstrap-wysihtml5/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/bootstrap-wysihtml5/.settings/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/bootstrap-wysihtml5/LICENCE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/bootstrap-wysihtml5/css/bootstrap-wysihtml5.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/bootstrap-wysihtml5/css/bootstrap3-wysiwyg5-color.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/bootstrap-wysihtml5/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/bootstrap-wysihtml5/js/bootstrap3-wysihtml5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/bootstrap-wysihtml5/js/wysihtml5-0.3.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/bootstrap-wysihtml5/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/bootstrap/css/bootstrap-theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/admin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/price-table.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/print-result.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/process.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/data-table/dataTables.bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/data-table/datatable_bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/data-table/jquery.dataTables.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/datepicker/daterangepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/datepicker/daterangepicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/datepicker/moment.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/font-awesome/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/font-awesome/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/font-awesome/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/font-awesome/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/font-awesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/font-awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fuelux/COPYING" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fuelux/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fuelux/THIRD-PARTY" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fuelux/css/fuelux-responsive.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fuelux/css/fuelux.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fuelux/js/loader.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fuelux/js/require.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/back_disabled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/back_enabled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/back_enabled_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/forward_disabled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/forward_enabled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/forward_enabled_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/ruble.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/sort_asc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/sort_asc_disabled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/sort_both.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/sort_desc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/sort_desc_disabled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/face.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/jquery-2.0.3.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/jquery-2.0.3.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/jquery.form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/jquery.popupoverlay.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/jsscript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/untitled.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/video.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/video_2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/video_admin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/timepicker-gh/bootstrap-timepicker.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/timepicker-gh/bootstrap-timepicker.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam-images/placeholder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/install/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/install/UNLICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/install/assets/install.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/install/assets/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/install/config/database.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/install/error_log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/install/includes/core_class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/install/includes/database_class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/install/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/license.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/.idea/mcq.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/1.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/X-editable/css/bootstrap-editable.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/X-editable/img/clear.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/X-editable/img/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/X-editable/js/bootstrap-editable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/X-editable/js/bootstrap-editable.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/bootstrap-wysihtml5/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/bootstrap-wysihtml5/.settings/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/bootstrap-wysihtml5/LICENCE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/bootstrap-wysihtml5/css/bootstrap-wysihtml5.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/bootstrap-wysihtml5/css/bootstrap3-wysiwyg5-color.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/bootstrap-wysihtml5/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/bootstrap-wysihtml5/js/bootstrap3-wysihtml5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/bootstrap-wysihtml5/js/wysihtml5-0.3.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/bootstrap-wysihtml5/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/bootstrap/css/bootstrap-theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/css/admin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/css/price-table.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/css/print-result.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/css/process.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/data-table/dataTables.bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/data-table/datatable_bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/data-table/jquery.dataTables.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/datepicker/daterangepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/datepicker/daterangepicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/datepicker/moment.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/font-awesome/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/font-awesome/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/font-awesome/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/font-awesome/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/font-awesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/font-awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/fuelux/COPYING" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/fuelux/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/fuelux/THIRD-PARTY" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/fuelux/css/fuelux-responsive.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/fuelux/css/fuelux.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/fuelux/js/loader.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/fuelux/js/require.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/images/back_disabled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/images/back_enabled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/images/back_enabled_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/images/forward_disabled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/images/forward_enabled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/images/forward_enabled_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/images/ruble.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/images/sort_asc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/images/sort_asc_disabled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/images/sort_both.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/images/sort_desc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/images/sort_desc_disabled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/js/face.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/js/jquery-2.0.3.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/js/jquery-2.0.3.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/js/jquery.form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/js/jquery.popupoverlay.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/js/jsscript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/js/untitled.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/js/video.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/js/video_2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/js/video_admin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/timepicker-gh/bootstrap-timepicker.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/assets/timepicker-gh/bootstrap-timepicker.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/exam-images/placeholder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/install/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/install/UNLICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/install/assets/install.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/install/assets/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/install/config/database.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/install/error_log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/install/includes/core_class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/install/includes/database_class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/install/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/license.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/cache/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/cache/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/config/autoload.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/config/cacert.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/config/config.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/config/constants.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/config/database.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/config/doctypes.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/config/foreign_chars.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/config/hooks.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/config/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/config/migration.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/config/mimes.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/config/profiler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/config/routes.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/config/smileys.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/config/user_agents.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/controllers/admin/settings.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/controllers/admin/system_control.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/controllers/admin_control.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/controllers/blog.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/controllers/faq_control.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/controllers/guest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/controllers/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/controllers/login_control.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/controllers/membership.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/controllers/message_control.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/controllers/noticeboard.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/controllers/user_control.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/core/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/errors/error_404.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/errors/error_db.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/errors/error_general.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/errors/error_php.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/errors/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/helpers/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/hooks/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/language/english/errors_lang.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/language/english/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/language/english/messages_lang.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/libraries/Merchant.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/libraries/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/libraries/merchant/merchant_paypal_base.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/libraries/merchant/merchant_paypal_express.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/logs/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/models/admin_model.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/models/blog_model.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/models/exam_model.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/models/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/models/login_model.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/models/membership_model.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/models/noticeboard_model.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/models/settings_model.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/models/system_model.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/models/user_model.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/packages/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/packages/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/third_party/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/admin/Contact_form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/admin/admin_login_form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/admin/dashboard.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/admin/open_messages.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/admin/system_settings.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/admin/view_all_blog.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/admin/view_faqs.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/admin/view_memberships.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/admin/view_messages.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/admin/view_noticeboeard.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/admin/view_profile_info.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/admin/view_system_info.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/content/about_us.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/content/blog_page.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/content/blog_post_single.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/content/exam_instructions.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/content/exam_summery.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/content/faqs.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/content/home_page.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/content/mock_detail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/content/pricing.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/content/result_detail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/content/start_exam.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/content/view_all_categories.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/content/view_all_mocks.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/content/view_all_notice.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/content/view_all_results.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/content/view_all_users.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/content/view_banned_users.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/content/view_mock_list.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/content/view_mock_list_backup.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/content/view_my_results.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/content/view_notice.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/content/view_payment_history.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/content/view_user_mocks.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/dashboard.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/editor.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/footer/admin_footer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/footer/footer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/form/add_feature_form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/form/blog_edit_form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/form/blog_form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/form/category_form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/form/contact_form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/form/create_offer_form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/form/edit_mock_detail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/form/edit_offer_form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/form/email_reply.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/form/faq_form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/form/forgot_password.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/form/login_form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/form/mock_form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/form/notice_edit_form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/form/notice_form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/form/password_revovery.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/form/question_form-backup.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/form/question_form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/form/register_form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/form/set_time_n_random_ques_no.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/form/user_add_form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/header/admin_head.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/header/admin_top_navigation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/header/head.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/header/top_navigation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/home.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/modals/contact_form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/modals/email_compose.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/modals/email_reply.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/modals/login_n_register.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/modals/update_question.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/plugin_scripts/are_you_sure.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/plugin_scripts/bootstrap-timepicker.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/plugin_scripts/bootstrap-wysihtml5.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/plugin_scripts/datatable_scripts.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/plugin_scripts/datepicker.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/plugin_scripts/graph_n_chart.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/plugin_scripts/popupoverlay.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/plugin_scripts/price-table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/plugin_scripts/user_ban_confirmation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/plugin_scripts/x-editable_scripts.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/sidebar/admin_sidebar.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/student_dashboard.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/school/views/teacher_dashboard.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/core/Benchmark.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/core/CodeIgniter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/core/Common.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/core/Config.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/core/Controller.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/core/Exceptions.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/core/Hooks.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/core/Input.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/core/Lang.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/core/Loader.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/core/Model.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/core/Output.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/core/Router.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/core/Security.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/core/URI.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/core/Utf8.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/core/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/database/DB.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/database/DB_active_rec.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/database/DB_cache.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/database/DB_driver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/database/DB_forge.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/database/DB_result.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/database/DB_utility.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/database/drivers/cubrid/cubrid_driver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/database/drivers/cubrid/cubrid_forge.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/database/drivers/cubrid/cubrid_result.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/database/drivers/cubrid/cubrid_utility.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/database/drivers/cubrid/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/database/drivers/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/database/drivers/mssql/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/database/drivers/mssql/mssql_driver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/database/drivers/mssql/mssql_forge.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/database/drivers/mssql/mssql_result.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/database/drivers/mssql/mssql_utility.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/database/drivers/mysql/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/database/drivers/mysql/mysql_driver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/database/drivers/mysql/mysql_forge.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/database/drivers/mysql/mysql_result.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/database/drivers/mysql/mysql_utility.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/database/drivers/mysqli/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/database/drivers/mysqli/mysqli_driver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/database/drivers/mysqli/mysqli_forge.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/database/drivers/mysqli/mysqli_result.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/database/drivers/mysqli/mysqli_utility.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/database/drivers/oci8/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/database/drivers/oci8/oci8_driver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/database/drivers/oci8/oci8_forge.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/database/drivers/oci8/oci8_result.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/database/drivers/oci8/oci8_utility.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/database/drivers/odbc/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/database/drivers/odbc/odbc_driver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/database/drivers/odbc/odbc_forge.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/database/drivers/odbc/odbc_result.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/database/drivers/odbc/odbc_utility.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/database/drivers/pdo/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/database/drivers/pdo/pdo_driver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/database/drivers/pdo/pdo_forge.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/database/drivers/pdo/pdo_result.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/database/drivers/pdo/pdo_utility.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/database/drivers/postgre/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/database/drivers/postgre/postgre_driver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/database/drivers/postgre/postgre_forge.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/database/drivers/postgre/postgre_result.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/database/drivers/postgre/postgre_utility.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/database/drivers/sqlite/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/database/drivers/sqlite/sqlite_driver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/database/drivers/sqlite/sqlite_forge.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/database/drivers/sqlite/sqlite_result.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/database/drivers/sqlite/sqlite_utility.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/database/drivers/sqlsrv/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/database/drivers/sqlsrv/sqlsrv_driver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/database/drivers/sqlsrv/sqlsrv_forge.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/database/drivers/sqlsrv/sqlsrv_result.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/database/drivers/sqlsrv/sqlsrv_utility.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/database/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/fonts/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/fonts/texb.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/helpers/array_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/helpers/captcha_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/helpers/cookie_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/helpers/date_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/helpers/directory_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/helpers/download_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/helpers/email_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/helpers/file_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/helpers/form_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/helpers/html_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/helpers/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/helpers/inflector_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/helpers/language_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/helpers/number_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/helpers/path_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/helpers/security_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/helpers/smiley_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/helpers/string_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/helpers/text_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/helpers/typography_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/helpers/url_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/helpers/xml_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/language/english/calendar_lang.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/language/english/date_lang.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/language/english/db_lang.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/language/english/email_lang.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/language/english/form_validation_lang.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/language/english/ftp_lang.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/language/english/imglib_lang.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/language/english/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/language/english/migration_lang.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/language/english/number_lang.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/language/english/profiler_lang.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/language/english/unit_test_lang.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/language/english/upload_lang.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/language/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/libraries/Cache/Cache.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/libraries/Cache/drivers/Cache_apc.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/libraries/Cache/drivers/Cache_dummy.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/libraries/Cache/drivers/Cache_file.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/libraries/Cache/drivers/Cache_memcached.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/libraries/Calendar.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/libraries/Cart.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/libraries/Driver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/libraries/Email.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/libraries/Encrypt.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/libraries/Form_validation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/libraries/Ftp.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/libraries/Image_lib.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/libraries/Javascript.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/libraries/Log.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/libraries/Migration.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/libraries/Pagination.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/libraries/Parser.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/libraries/Profiler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/libraries/Session.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/libraries/Sha1.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/libraries/Table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/libraries/Trackback.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/libraries/Typography.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/libraries/Unit_test.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/libraries/Upload.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/libraries/User_agent.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/libraries/Xmlrpc.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/libraries/Xmlrpcs.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/libraries/Zip.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/libraries/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/system/libraries/javascript/Jquery.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcq_latest/mcq_latest/user-avatar/avatar-placeholder.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/cache/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/cache/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/config/autoload.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/config/cacert.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/config/config.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/config/constants.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/config/database.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/config/doctypes.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/config/foreign_chars.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/config/hooks.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/config/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/config/migration.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/config/mimes.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/config/profiler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/config/routes.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/config/smileys.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/config/user_agents.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/controllers/admin/settings.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/controllers/admin/system_control.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/controllers/admin_control.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/controllers/blog.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/controllers/faq_control.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/controllers/guest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/controllers/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/controllers/login_control.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/controllers/membership.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/controllers/message_control.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/controllers/noticeboard.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/controllers/user_control.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/core/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/errors/error_404.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/errors/error_db.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/errors/error_general.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/errors/error_php.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/errors/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/helpers/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/hooks/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/language/english/errors_lang.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/language/english/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/language/english/messages_lang.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/libraries/Merchant.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/libraries/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/libraries/merchant/merchant_paypal_base.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/libraries/merchant/merchant_paypal_express.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/logs/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/models/admin_model.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/models/blog_model.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/models/exam_model.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/models/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/models/login_model.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/models/membership_model.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/models/noticeboard_model.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/models/settings_model.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/models/system_model.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/models/user_model.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/packages/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/packages/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/third_party/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/admin/Contact_form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/admin/admin_login_form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/admin/dashboard.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/admin/open_messages.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/admin/system_settings.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/admin/view_all_blog.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/admin/view_faqs.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/admin/view_memberships.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/admin/view_messages.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/admin/view_noticeboeard.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/admin/view_profile_info.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/admin/view_system_info.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/content/about_us.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/content/blog_page.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/content/blog_post_single.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/content/exam_instructions.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/content/exam_summery.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/content/faqs.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/content/home_page.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/content/mock_detail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/content/pricing.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/content/result_detail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/content/start_exam.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/content/view_all_categories.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/content/view_all_mocks.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/content/view_all_notice.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/content/view_all_results.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/content/view_all_users.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/content/view_banned_users.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/content/view_mock_list.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/content/view_mock_list_backup.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/content/view_my_results.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/content/view_notice.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/content/view_payment_history.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/content/view_user_mocks.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/dashboard.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/editor.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/footer/admin_footer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/footer/footer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/form/add_feature_form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/form/blog_edit_form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/form/blog_form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/form/category_form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/form/contact_form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/form/create_offer_form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/form/edit_mock_detail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/form/edit_offer_form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/form/email_reply.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/form/faq_form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/form/forgot_password.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/form/login_form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/form/mock_form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/form/notice_edit_form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/form/notice_form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/form/password_revovery.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/form/question_form-backup.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/form/question_form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/form/register_form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/form/set_time_n_random_ques_no.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/form/user_add_form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/header/admin_head.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/header/admin_top_navigation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/header/head.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/header/top_navigation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/home.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/modals/contact_form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/modals/email_compose.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/modals/email_reply.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/modals/login_n_register.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/modals/update_question.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/plugin_scripts/are_you_sure.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/plugin_scripts/bootstrap-timepicker.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/plugin_scripts/bootstrap-wysihtml5.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/plugin_scripts/datatable_scripts.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/plugin_scripts/datepicker.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/plugin_scripts/graph_n_chart.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/plugin_scripts/popupoverlay.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/plugin_scripts/price-table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/plugin_scripts/user_ban_confirmation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/plugin_scripts/x-editable_scripts.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/sidebar/admin_sidebar.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/student_dashboard.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/views/teacher_dashboard.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/core/Benchmark.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/core/CodeIgniter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/core/Common.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/core/Config.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/core/Controller.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/core/Exceptions.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/core/Hooks.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/core/Input.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/core/Lang.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/core/Loader.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/core/Model.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/core/Output.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/core/Router.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/core/Security.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/core/URI.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/core/Utf8.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/core/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/DB.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/DB_active_rec.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/DB_cache.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/DB_driver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/DB_forge.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/DB_result.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/DB_utility.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/cubrid/cubrid_driver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/cubrid/cubrid_forge.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/cubrid/cubrid_result.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/cubrid/cubrid_utility.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/cubrid/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/mssql/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/mssql/mssql_driver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/mssql/mssql_forge.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/mssql/mssql_result.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/mssql/mssql_utility.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/mysql/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/mysql/mysql_driver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/mysql/mysql_forge.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/mysql/mysql_result.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/mysql/mysql_utility.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/mysqli/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/mysqli/mysqli_driver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/mysqli/mysqli_forge.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/mysqli/mysqli_result.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/mysqli/mysqli_utility.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/oci8/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/oci8/oci8_driver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/oci8/oci8_forge.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/oci8/oci8_result.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/oci8/oci8_utility.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/odbc/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/odbc/odbc_driver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/odbc/odbc_forge.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/odbc/odbc_result.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/odbc/odbc_utility.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/pdo/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/pdo/pdo_driver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/pdo/pdo_forge.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/pdo/pdo_result.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/pdo/pdo_utility.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/postgre/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/postgre/postgre_driver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/postgre/postgre_forge.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/postgre/postgre_result.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/postgre/postgre_utility.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/sqlite/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/sqlite/sqlite_driver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/sqlite/sqlite_forge.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/sqlite/sqlite_result.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/sqlite/sqlite_utility.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/sqlsrv/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/sqlsrv/sqlsrv_driver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/sqlsrv/sqlsrv_forge.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/sqlsrv/sqlsrv_result.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/sqlsrv/sqlsrv_utility.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/fonts/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/fonts/texb.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/helpers/array_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/helpers/captcha_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/helpers/cookie_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/helpers/date_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/helpers/directory_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/helpers/download_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/helpers/email_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/helpers/file_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/helpers/form_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/helpers/html_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/helpers/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/helpers/inflector_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/helpers/language_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/helpers/number_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/helpers/path_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/helpers/security_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/helpers/smiley_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/helpers/string_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/helpers/text_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/helpers/typography_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/helpers/url_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/helpers/xml_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/language/english/calendar_lang.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/language/english/date_lang.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/language/english/db_lang.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/language/english/email_lang.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/language/english/form_validation_lang.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/language/english/ftp_lang.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/language/english/imglib_lang.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/language/english/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/language/english/migration_lang.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/language/english/number_lang.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/language/english/profiler_lang.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/language/english/unit_test_lang.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/language/english/upload_lang.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/language/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Cache/Cache.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Cache/drivers/Cache_apc.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Cache/drivers/Cache_dummy.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Cache/drivers/Cache_file.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Cache/drivers/Cache_memcached.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Calendar.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Cart.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Driver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Email.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Encrypt.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Form_validation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Ftp.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Image_lib.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Javascript.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Log.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Migration.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Pagination.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Parser.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Profiler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Session.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Sha1.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Trackback.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Typography.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Unit_test.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Upload.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/User_agent.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Xmlrpc.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Xmlrpcs.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Zip.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/javascript/Jquery.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-avatar/avatar-placeholder.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mcq_latest.zip" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>$str</find>
+      <find>payment_process</find>
+      <find>view_exam_summery</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="test" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/school/views/header/top_navigation.php" />
+        <option value="$PROJECT_DIR$/school/views/admin/admin_login_form.php" />
+        <option value="$PROJECT_DIR$/school/views/sidebar/admin_sidebar.php" />
+        <option value="$PROJECT_DIR$/school/controllers/user_control.php" />
+        <option value="$PROJECT_DIR$/school/views/content/view_all_users.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/install/index.php" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/mcq.iml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="1750" />
+    <option name="height" value="980" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="mcq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mcq" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4c252e59-e0c7-4e28-8c53-b709381315e6" name="Default Changelist" comment="" />
+      <created>1556425682097</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1556425682097</updated>
+      <workItem from="1556425683483" duration="4686000" />
+      <workItem from="1556451507742" duration="1994000" />
+      <workItem from="1556468092395" duration="596000" />
+      <workItem from="1556592386703" duration="2530000" />
+      <workItem from="1556677286660" duration="732000" />
+    </task>
+    <task id="LOCAL-00001" summary="main files">
+      <created>1556684216886</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1556684216886</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="10992000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24966443" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.3286119" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" weight="0.3295302" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="main files" />
+    <option name="LAST_COMMIT_MESSAGE" value="main files" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/school/controllers/guest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-660">
+          <caret line="21" column="56" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="56" />
+          <folding>
+            <element signature="e#127#134#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/school/views/header/top_navigation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="50" column="31" selection-start-line="50" selection-start-column="31" selection-end-line="50" selection-end-column="31" />
+          <folding>
+            <element signature="n#li#6;n#ul#0;n#div#1;n#div#0;n#nav#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/school/controllers/admin_control.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5360">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+          <folding>
+            <element signature="e#127#134#1" expanded="true" />
+            <element signature="e#127#134#1" expanded="true" />
+            <element signature="e#127#134#1" expanded="true" />
+            <element signature="e#127#134#1" expanded="true" />
+            <element signature="e#127#134#1" expanded="true" />
+            <element signature="e#126#133#1" expanded="true" />
+            <element signature="e#127#134#1" expanded="true" />
+            <element signature="e#127#134#1" expanded="true" />
+            <element signature="e#126#133#1" expanded="true" />
+            <element signature="e#126#133#1" expanded="true" />
+            <element signature="e#127#134#1" expanded="true" />
+            <element signature="e#126#133#1" expanded="true" />
+            <element signature="e#126#133#1" expanded="true" />
+            <element signature="e#126#133#1" expanded="true" />
+            <element signature="e#127#134#1" expanded="true" />
+            <element signature="e#126#133#1" expanded="true" />
+            <element signature="e#127#134#1" expanded="true" />
+            <element signature="e#127#134#1" expanded="true" />
+            <element signature="e#127#134#1" expanded="true" />
+            <element signature="e#127#134#1" expanded="true" />
+            <element signature="e#127#134#1" expanded="true" />
+            <element signature="e#127#134#1" expanded="true" />
+            <element signature="e#127#134#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/school/controllers/admin/system_control.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-200">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding>
+            <element signature="e#127#134#1" expanded="true" />
+            <element signature="e#126#133#1" expanded="true" />
+            <element signature="e#126#133#1" expanded="true" />
+            <element signature="e#126#133#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/school/views/header/admin_head.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/school/views/header/admin_top_navigation.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/school/controllers/admin/settings.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/school/config/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5220" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/school/views/admin/admin_login_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="17" column="49" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/school/controllers/login_control.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="76" column="68" selection-start-line="76" selection-start-column="52" selection-end-line="76" selection-end-column="68" />
+          <folding>
+            <element signature="e#127#134#1" expanded="true" />
+            <element signature="e#2174#3299#0#PHP" />
+            <element signature="e#126#133#1" expanded="true" />
+            <element signature="e#127#134#1" expanded="true" />
+            <element signature="e#126#133#1" expanded="true" />
+            <element signature="e#127#134#1" expanded="true" />
+            <element signature="e#127#134#1" expanded="true" />
+            <element signature="e#127#134#1" expanded="true" />
+            <element signature="e#127#134#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/school/views/content/view_all_users.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="27" column="29" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/school/controllers/user_control.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="28" column="68" selection-start-line="28" selection-start-column="54" selection-end-line="28" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/school/views/sidebar/admin_sidebar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0f67c5fb-cd5f-4ceb-b818-6480cd848a91/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/extensions/com.intellij.database/schema/Generate POJOs.groovy">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/school/config/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/school/controllers/membership.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="18" column="8" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+          <folding>
+            <element signature="e#127#134#1" expanded="true" />
+            <element signature="e#127#134#1" expanded="true" />
+            <element signature="e#126#133#1" expanded="true" />
+            <element signature="e#127#134#1" expanded="true" />
+            <element signature="e#126#133#1" expanded="true" />
+            <element signature="e#127#134#1" expanded="true" />
+            <element signature="e#126#133#1" expanded="true" />
+            <element signature="e#127#134#1" expanded="true" />
+            <element signature="e#126#133#1" expanded="true" />
+            <element signature="e#127#134#1" expanded="true" />
+            <element signature="e#126#133#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/install/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
