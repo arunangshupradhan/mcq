@@ -39,8 +39,7 @@ if (isset($class)) {
         <li><a href="<?=base_url('index.php/exam_control/view_results');?>" class="<?=($active==2)?"active":'';?>"><i class="fa fa-puzzle-piece"></i> View Results</a></li>
     <?php } ?>
     
-    <?php 
-    if ($this->session->userdata('user_id') == 6) {?>
+
            
     
     
@@ -55,6 +54,8 @@ if (isset($class)) {
     </li>
     <?php } ?>
     <?php } ?>
+    <?php
+    if ($this->session->userdata('user_id') == 6) {?>
     <?php if ($this->session->userdata['user_role_id'] <= 4) { ?>
     <li><a href="#" class="sub <?=($active==7)?"active":'';?>"><i class="fa fa-comment"> </i> Blog</a>
         <ul>

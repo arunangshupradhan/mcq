@@ -333,6 +333,7 @@ class Exam_model extends CI_Model
         $data['pay_date'] = date('Y-m-d');
         $data['pay_method'] = $info['method'];
         $data['gateway_reference'] = $info['gateway_reference'];
+        $data['response'] = $info['response'];
         $this->db->insert('payment_history', $data);
         if ($this->db->affected_rows() == 1) {
             return $this->db->insert_id();

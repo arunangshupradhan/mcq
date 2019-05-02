@@ -13,9 +13,7 @@ class Membership extends CI_Controller
         $this->load->model('membership_model');
         date_default_timezone_set($this->session->userdata['time_zone']);
         
-        if ($this->session->userdata('user_id') != 6) {
-            redirect(base_url());
-        }
+
         
         
     }
@@ -23,7 +21,7 @@ class Membership extends CI_Controller
     public function index($message = '')
     {
     	
-    	
+
     	
     	
         if (!$this->session->userdata('log')) {

@@ -77,7 +77,7 @@
 }
 ?>
 <div class="container">
-    <a href="<?=base_url('index.php/exam_control/'.$payment_info.'/'.$mock->title_id) ?>" class="btn btn-success col-xs-5 col-xs-offset-1"> <?php echo ($payment_info == 'payment_process')?'Pay with PayPal':'Start Exam' ?></a>    
+    <a href="<?=base_url('index.php/exam_control/'.$payment_info.'/'.$mock->title_id) ?>" class="btn btn-success col-xs-5 col-xs-offset-1"> <?php echo ($payment_info == 'payment_process')?'Pay with PayUmoney':'Start Exam' ?></a>
     <a href="<?=base_url('index.php/exam_control/view_all_mocks') ?>" class="btn btn-default col-xs-offset-1">Cancel</a>    
 </div><br/><br/>
 <div class="container">

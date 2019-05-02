@@ -18,11 +18,12 @@
                     </a>
                 <?php } ?>
                 <ul class="nav navbar-nav navbar-right navbar-user">
+                    <li><a href="<?=base_url('index.php/guest/pricing');?>">Pricing</a></li>
                     <?php if ($this->session->userdata('user_id') == 6) {?>
                     <li><a href="<?=base_url('index.php/exam_control/view_all_mocks');?>">Exams</a></li>
                     <li><a href="<?=base_url('index.php/blog');?>">Blog</a></li>
                     <?php if ($this->session->userdata('commercial')) { ?>
-                        <li><a href="<?=base_url('index.php/guest/pricing');?>">Pricing</a></li>
+
                     <?php } ?>
                     <li><a href="<?=base_url('index.php/guest/about_us');?>">About</a></li>
                     <li><a href="#contact" data-toggle="modal">Contact</a></li>

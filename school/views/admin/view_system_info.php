@@ -28,7 +28,7 @@ $str .= "]";
                     <li><a href="#tab_5" data-toggle="tab">Content</a></li>
                     <li><a href="#tab_2" data-toggle="tab">Social Profiles</a></li>
                     <li><a href="#tab_3" data-toggle="tab">Support Info</a></li>
-                    <li><a href="#tab_4" data-toggle="tab">PayPal Settings</a></li>
+                    <li><a href="#tab_4" data-toggle="tab">PayUmoney Settings</a></li>
                 </ul>
                 <div class="tab-content info-display">
 
@@ -98,7 +98,7 @@ $str .= "]";
 
                     <div class="tab-pane" id="tab_4">
                         <dl class="dl-horizontal">
-                            <dt>PayPal Status: </dt>
+                            <dt>PayUmony Status: </dt>
                             <dd>
                                 <blockquote>
                                     <p>
@@ -106,7 +106,7 @@ $str .= "]";
                                     </p>
                                 </blockquote>
                             </dd>
-                            <dt>Currency: <br/><small><em>( USD, EUR, etc. )</em></small></dt>
+                            <dt>Currency: <br/><small><em>( INR )</em></small></dt>
                             <dd>
                                 <blockquote>
                                     <p>
@@ -114,7 +114,7 @@ $str .= "]";
                                     </p>
                                 </blockquote>
                             </dd>
-                            <dt>PayPal API Username: </dt>
+                            <dt>Auth Header: </dt>
                             <dd>
                                 <blockquote>
                                     <p>
@@ -122,7 +122,7 @@ $str .= "]";
                                     </p>
                                 </blockquote>
                             </dd>
-                            <dt>PayPal API Password: </dt>
+                            <dt>Merchant Key: </dt>
                             <dd>
                                 <blockquote>
                                     <p>
@@ -130,7 +130,7 @@ $str .= "]";
                                     </p>
                                 </blockquote>
                             </dd>
-                            <dt>Paypal API Signature: </dt>
+                            <dt>Merchant Salt: </dt>
                             <dd>
                                 <blockquote>
                                     <p>

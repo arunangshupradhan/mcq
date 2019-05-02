@@ -105,7 +105,7 @@ jQuery(function($) {
 });
 
 
-<!------------- Delete Confirmation ---------------> 
+
 
 function delete_confirmation() {
     return confirm('Do you really want to delete the data?');
