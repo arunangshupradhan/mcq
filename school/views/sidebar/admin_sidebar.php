@@ -85,11 +85,11 @@ if (isset($class)) {
     <?php } else {?>
         <li><a class="<?=($active==4)?"active":'';?>" href="<?=base_url('index.php/message_control'); ?>"><i class="fa fa-envelope-o"></i> Inbox</a></li>
     <?php }?>
+
+    <?php } ?>
     <?php if ($this->session->userdata['user_role_id'] <= 3) { ?>
         <li><a class="<?=($active==5)?"active":'';?>" href="<?=base_url('index.php/admin_control/view_payment_history');?>"><i class="fa fa-money"></i> Payment History</a></li>
     <?php }?>
-    <?php } ?>
-    
     <li><a href="<?=base_url('index.php/login_control/logout'); ?>"><i class="fa fa-power-off"></i> Logout</a></li>
 </ul>
 <!-- /End Sidebar -->

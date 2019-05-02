@@ -273,14 +273,15 @@ class Exam_control extends CI_Controller
         //$this->merchant->load('paypal_express');
        // $this->merchant->initialize($settings);
         //$response = $this->merchant->purchase_return($params);
-
-       // if ($response->success()) {
+        $response = $_POST;
+        $user_id = $this->session->userdata('user_id');
+       if ( $response['status'] == 'success' ) {
             $message = '<div class="alert alert-sucsess alert-dismissable">'
                     . '<button type="button" class="close" data-dismiss="alert" aria-hidden="TRUE">&times;</button>'
                     . 'Payment Successful!</div>';
             $this->session->set_flashdata('message', $message);
             $data = array();
-            $data['PayerID'] = $id;
+            $data['PayerID'] = $user_id;
             $data['token'] = $_POST['txnid'];
             $data['exam_title'] = $_POST['productinfo'];
             $data['pay_amount'] = $_POST['amount'];
@@ -294,11 +295,12 @@ class Exam_control extends CI_Controller
             $this->session->set_userdata('pay_id', $token_id);
 
             redirect(base_url() . 'exam_control/view_exam_instructions/' . $id);
-        /*} else {
-            $message = $response->message();
-            echo('Error processing payment: ' . $message);
+        } else {
+            //$message = $response->message();
+           $message = '';
+            echo('Error processing payment' . $message);
             exit;
-        }*/
+        }
     }
 
     public function view_results($message = '')

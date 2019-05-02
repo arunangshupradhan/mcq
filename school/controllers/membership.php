@@ -11,6 +11,7 @@ class Membership extends CI_Controller
         parent::__construct();
 
         $this->load->model('membership_model');
+        $this->load->model('user_model');
         date_default_timezone_set($this->session->userdata['time_zone']);
         
 
@@ -74,7 +75,13 @@ class Membership extends CI_Controller
             'return_url' => base_url('index.php/membership/payment_complete/' . $id),
             'cancel_url' => base_url());
 
-        $this->load->library('merchant');
+        $data['params'] = $params;
+        $data['settings'] = $settings;
+        $user_id = $this->session->userdata('user_id');
+        $data['user_details'] = $this->user_model->get_user_info($user_id);
+        $this->load->view('form/PayUMoney_membership_form', $data);
+
+        /*$this->load->library('merchant');
         $this->merchant->load('paypal_express');
         $this->merchant->initialize($settings);
         $response = $this->merchant->purchase($params);
@@ -88,7 +95,7 @@ class Membership extends CI_Controller
             $data['order_token'] = sha1(rand(0, 999999) . $id);
             $data['exam_id'] = $id;
             $set_token = $this->exam_model->set_order_token($data);
-        }
+        }*/
     }
 
     public function payment_complete($id)
@@ -96,6 +103,7 @@ class Membership extends CI_Controller
         if (!$this->session->userdata('log')) {
             redirect(base_url('index.php/login_control'));
         }
+        $user_id = $this->session->userdata('user_id');
         $this->load->model('exam_model');
         $this->load->model('admin_model');
         $membership = $this->membership_model->get_offer_by_id($id);
@@ -106,7 +114,7 @@ class Membership extends CI_Controller
         }else{
             $mode = FALSE;
         }
-        $settings = array(
+      /*  $settings = array(
             'username' => $payment_settings->api_username,
             'password' => $payment_settings->api_pass,
             'signature' => $payment_settings->api_signature,
@@ -115,14 +123,18 @@ class Membership extends CI_Controller
         $params = array(
             'amount' => $membership->price_table_cost,
             'currency' => $this->session->userdata('currency_code'),
-            'cancel_url' => base_url('index.php/membership'));
+            'cancel_url' => base_url('index.php/membership'));*/
 
-        $this->load->library('merchant');
+
+        /*$this->load->library('merchant');
         $this->merchant->load('paypal_express');
         $this->merchant->initialize($settings);
-        $response = $this->merchant->purchase_return($params);
+        $response = $this->merchant->purchase_return($params);*/
 
-        if ($response->success()) {
+        $response = $_POST;
+
+
+        if ( $response['status'] == 'success' ) {
             $duration = '+ '. $membership->offer_duration.' '. $membership->offer_type.'';
 
             $subscription_start = date("Y-m-d");
@@ -140,13 +152,13 @@ class Membership extends CI_Controller
                     . 'You subscribed successfully!</div>';
             $this->session->set_flashdata('message', $message);
             $data = array();
-            $data['PayerID'] = $this->input->get('PayerID');
-            $data['token'] = $this->input->get('token');
-            $data['exam_title'] = $membership->price_table_title;
+            $data['PayerID'] = $user_id;
+            $data['token'] = $_POST['txnid'];
+            $data['exam_title'] = $_POST['productinfo'];
             $data['pay_amount'] = $membership->price_table_cost;
             $data['currency_code'] = $this->session->userdata('currency_code') . ' ' . $this->session->userdata('currency_symbol');
-            $data['method'] = 'PayPal';
-            $data['gateway_reference'] = $response->reference();
+            $data['method'] = 'PayUmoney';
+            $data['gateway_reference'] = $_POST['payuMoneyId'];
             $token_id = $this->exam_model->set_payment_detail($data);
 
             $this->session->set_userdata('payment_token', $data['token']);
@@ -154,8 +166,8 @@ class Membership extends CI_Controller
 
             redirect(base_url() . 'login_control/dashboard_control/' . $this->session->userdata('user_id'));
         } else {
-            $message = $response->message();
-            echo('Error processing payment: ' . $message);
+            $message = '';
+            echo('Error processing payment' . $message);
             exit;
         }
     }
