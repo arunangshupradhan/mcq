@@ -289,6 +289,7 @@ class Exam_model extends CI_Model
 
     public function evaluate_result()
     {
+
         $num_of_ans = $this->input->post('num_of_ans');
         $answers = $this->input->post('ans');
         $total_ques = $this->input->post('total_ques');
@@ -297,8 +298,21 @@ class Exam_model extends CI_Model
 
         if (!$answers)
             return FALSE;
+        $answer_array = array();
 
-        foreach ($answers as $key => $answer) {
+        foreach ($answers as $key_str => $answer) {
+            $key_array = explode('_',$key_str);
+            if(is_array($answer)){
+                $answers_new[$key_array[0]][] = $answer[0];
+            }else{
+                $answers_new[$key_array[0]] = $answer;
+            }
+            $answer_array[] = $key_array[1];
+        }
+
+        foreach ($answers_new as $key => $answer) {
+
+
             if (is_array($answer)) {
                 if (count($answer) != $num_of_ans[$key]) {
                     continue;
@@ -316,7 +330,6 @@ class Exam_model extends CI_Model
                 }
             }
         }
-
         date_default_timezone_set($this->session->userdata['time_zone']);
         $result = round(($right_ans_count / $total_ques) * 100, 2);
         $data = array();

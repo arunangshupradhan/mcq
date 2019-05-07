@@ -76,7 +76,9 @@
                                             <input type="hidden" name="num_of_ans[<?= $ques->ques_id; ?>]" value="<?= $i; ?>">
                                             <div class="<?= $type ?>">
                                                 <label>
-                                                    <input type="<?= $type ?>" name="ans[<?= $ques->ques_id; ?>]<?= ($type == 'checkbox') ? '[]' : '' ?>" value="<?= form_prep($ans->right_ans); ?>"> <?= form_prep($ans->answer); ?>
+
+
+                                                    <input type="<?= $type ?>" name="ans[<?= $ques->ques_id.'_'.$ans->ans_id; ?>]<?= ($type == 'checkbox') ? '[]' : '' ?>" value="<?= form_prep($ans->right_ans); ?>"> <?= form_prep($ans->answer); ?>
                                                     <?php //echo base_url("answer-images/".$ans->ans_id.".jpg");
                                                     if (file_exists("answer-images/".$ans->ans_id.".jpg")) {
                                                         echo "<br/>";
