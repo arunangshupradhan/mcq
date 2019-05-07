@@ -9,7 +9,9 @@ class Membership_model extends CI_Model
 
     public function get_all_memberships()
     {
-        $result = $this->db->get('price_table')->result();
+        $result = $this->db->select('*')
+            ->from('price_table')
+            ->get()->result();
         return $result;
     }
     public function get_features()

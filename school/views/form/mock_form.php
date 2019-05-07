@@ -34,6 +34,20 @@ if ($message) {
                     <?php echo form_dropdown('category', $option, $cat_id, 'id="category" class="form-control"') ?>
                 </div>
             </div>
+            <?php
+            $option = array();
+            $option[''] = 'Select Course';
+            foreach ($membership as $course_val) {
+
+                    $option[$course_val->price_table_id] = $course_val->price_table_title;
+            }
+            ?>
+            <div class="form-group">
+                <label for="category" class="col-sm-offset-0 col-lg-2 col-xs-offset-1 col-xs-3 control-label mobile">Select Course:</label>
+                <div class="col-lg-5 col-sm-8 col-xs-7 col-mb">
+                    <?php echo form_dropdown('price_table_id', $option ,'', 'class="form-control"') ?>
+                </div>
+            </div>
             <div class="form-group">
                 <label for="mock_title" class="col-sm-offset-0 col-lg-2 col-xs-offset-1 col-xs-3 control-label mobile">Exam Title:</label>
                 <div class="col-lg-5 col-sm-8 col-xs-7 col-mb">
@@ -84,11 +98,11 @@ if ($message) {
             </div>
 
             <?php if ($this->session->userdata('commercial')) { ?>
-            <div class="form-group">
+            <div class="form-group" style="display: none;">
                 <label for="exam_price" class="col-sm-offset-0 col-lg-2 col-xs-offset-1 col-xs-3 control-label mobile">Price:</label>
                 <div class="col-sm-3 col-xs-6 col-mb">
                     <div class="input-group">
-                      <?php echo form_input('price', '', 'id="exam_price" placeholder="Exam Price" class="form-control"') ?>
+                      <?php echo form_input('price', 0, 'id="exam_price" placeholder="Exam Price" class="form-control"') ?>
                       <span class="input-group-addon"> <?=$this->session->userdata('currency_symbol')?> </span>
                     </div>            
                 </div>

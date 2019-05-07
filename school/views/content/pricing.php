@@ -25,7 +25,8 @@
                      } ?>
                     </ul> 
                     <br/>
-                    <a class="btn btn-lg btn-block btn-warning" href="<?=base_url('index.php/membership/payment_process/'.$offer->price_table_id);?>">Subscribe</a>         
+                    <!--<a class="btn btn-lg btn-block btn-warning" href="<?/*=base_url('index.php/membership/payment_process/'.$offer->price_table_id);*/?>">Subscribe</a>-->
+                    <a class="btn btn-lg btn-block btn-warning" href="<?=base_url('/index.php/exam_control/view_all_mocks/'.$offer->price_table_id);?>">Details</a>
                 </div>
             <?php } ?>
             </div>

@@ -1,22 +1,9 @@
-<div class="my-fluid-container">
-    <div class="row row-offcanvas row-offcanvas-left">
-        <div class="col-xs-6 col-sm-3 col-lg-2 sidebar-offcanvas" id="sidebar" role="navigation">
-            <div class="list-group">
-                <a class="list-group-item list-group-item-heading active" href="<?=base_url('index.php/category/all'); ?>">All Categories</a>
-                <?php 
-                foreach ($categories as $cat) { 
-                ?>
-                    <a class="list-group-item" href="<?=base_url('index.php/category/' . $cat->category_id); ?>">
-                        <span class="badge pull-right <?=($mock_count[$cat->category_id] > 0) ? 'badge-warning' : 'badge-success'; ?>"><?=$mock_count[$cat->category_id]; ?></span>
-                        <?=$cat->category_name; ?>
-                    </a>
-                <?php 
-                }
-                ?>
-            </div>
-        </div><!--/span-->
 
-        <div class="col-xs-12 col-sm-9 col-lg-10">
+<div class="container">
+    <div class="row row-offcanvas row-offcanvas-left">
+
+
+        <div class="col-xs-12 col-sm-12 col-lg-12">
             <p class="pull-left visible-xs">
                 <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">View Category</button>
             </p>
@@ -30,13 +17,22 @@
             <div class="col-xs-12 exam-list-heading">
             <label class="header-label">Browsing</label>
             <h3 class="heade-title"><?=isset($category_name)?$category_name:'All Exams'; ?></h3>
-            <?php if ($this->session->userdata('commercial')) { ?>
-            <div class="header-control btn-group pull-right">
-                <a href="<?=base_url('index.php/exam_control/view_all_mocks') ?>" class="btn btn-default">All</a>
-                <a href="<?=base_url('index.php/exam_control/mocks_type/paid') ?>" class="btn btn-default">Paid</a>
-                <a href="<?=base_url('index.php/exam_control/mocks_type/free') ?>" class="btn btn-default">Free</a>
+
+          <?php if($this->uri->segment('2') == 'view_all_mocks'){ ?>
+              <?php if($this->session->userdata('user_id')){ ?>
+              <label class="header-label">Course: <?php echo $subscription_details->price_table_title;?></label>
+              <label class="header-label">Expired on: <?php echo date('d/m/Y',$user_details->subscription_end);?></label>
+              <?php } ?>
+              <?php if(0){ ?>
+            <div  class="header-control btn-group pull-right">
+                <a  class="btn btn-lg btn-block btn-warning course_purchase" href="<?=base_url('index.php/guest/pricing');?>">Upgrade Account</a>
             </div>
-            <?php } ?>
+           <?php }elseif( (time()<$user_details->subscription_start) || (time()> $user_details->subscription_end) ){?>
+                  <div  class="header-control btn-group pull-right">
+                      <a  class="btn btn-lg btn-block btn-warning course_purchase" href="<?=base_url('/index.php/membership/payment_process/'.$this->uri->segment('3')) ?>">Purchase</a>
+                  </div>
+           <?php   } ?>
+           <?php } ?>
 
             </div>
             
@@ -66,7 +62,9 @@
                             <p> 
                             <time class="total-question" ><?=$mock->random_ques_no;?> questions</time>
                             <div class="exam-duration" ><?=($hr)?$mock->time_duration.' hours':$minutes.' minutes';?></div>
+                              <?php if($this->session->userdata('user_id')){ ?>
                             <button class="btn btn-sm btn-primary">Start</button>
+                              <?php }?>
     <div class="fb-share-button" 
         data-href="<?=base_url('index.php/exam_control/view_exam_summery/'.$mock->title_id)?>" 
         data-layout="button" >

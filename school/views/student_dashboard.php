@@ -51,7 +51,7 @@
                         </a>
                     </div>
                     <div class="col-sm-4">
-                        <a href="<?=base_url('index.php/exam_control/view_all_mocks');?>">
+                        <a href="<?=base_url('index.php/exam_control/mocks_type/');?>">
                             <div class="panel panel-default">
                                 <div class="panel-body">
                                     <div class="row">
@@ -59,7 +59,7 @@
                                             <i class="fa fa-rocket fa-5x"></i>
                                         </div>
                                         <div class="col-xs-12">
-                                            <p class="dashboard-text text-center">Take New Exam</p>
+                                            <p class="dashboard-text text-center">Your Exam</p>
                                         </div>
                                     </div>
                                 </div>

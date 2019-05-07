@@ -219,6 +219,7 @@ class Admin_model extends CI_Model
         $info['user_id'] = $this->session->userdata['user_id'];
         $info['syllabus'] = $this->input->post('mock_syllabus', TRUE);
         $info['pass_mark'] = $this->input->post('passing_score', TRUE);
+        $info['price_table_id'] = $this->input->post('price_table_id', TRUE);
         $info['exam_price'] = ($this->input->post('price'))?$this->input->post('price', TRUE):0;
         $info['exam_created'] = date('Y-m-d H:i:s');
         $info['feature_img_name'] = ($upload_data == '')?'':$upload_data;
@@ -367,6 +368,7 @@ class Admin_model extends CI_Model
         $info['exam_price'] = ($this->input->post('price')) ? $this->input->post('price', TRUE) : 0;
         $info['random_ques_no'] = $this->input->post('random_ques', TRUE);
         $info['time_duration'] = $this->input->post('duration', TRUE);
+        $info['price_table_id'] = $this->input->post('price_table_id', TRUE);
         $info['feature_img_name'] = ($upload_data == '')?'':$upload_data;
         $info['last_modified_by'] = $this->session->userdata['user_id'];
         $this->db->where('title_id', $id);

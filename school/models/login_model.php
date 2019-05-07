@@ -45,11 +45,12 @@ class Login_model extends CI_Model
             return FALSE;
         } else {
             $this->db->insert('users', $info);
-            if ($this->db->affected_rows() == 1) {
+            return $this->db->insert_id();
+           /* if ($this->db->affected_rows() == 1) {
                 return TRUE;
             } else {
                 return FALSE;
-            }
+            }*/
         }
     }
 

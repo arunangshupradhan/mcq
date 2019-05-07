@@ -18,3 +18,7 @@
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 <script src="<?php echo base_url('assets/js/jquery-2.0.3.min.js') ?>"></script>
+
+<style>
+    .course_purchase{padding: 10px 60px;}
+</style>

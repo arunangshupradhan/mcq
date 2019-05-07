@@ -16,6 +16,14 @@
                     <?php echo validation_errors('<div class="alert alert-danger">', '</div>'); ?>
                 </div>
                 <div class="col-xs-offset-1 col-xs-10">
+                    <select name="course_id" class="form-control">
+                        <option >Select Course</option>
+                        <?php foreach($all_membership as $val){ ?>
+                            <option <?php if($val->price_table_id == $this->session->userdata('course_id')){ ?>selected="selected" <?php }?> value="<?php echo $val->price_table_id ?>" ><?php echo $val->price_table_title ?></option>
+                        <?php } ?>
+                    </select>
+                </div>
+                <div class="col-xs-offset-1 col-xs-10">
                       <?php echo form_input('user_name', '', 'id="user_name" placeholder="User Name *" class="form-control" required="required"') ?>
                 </div>
                 <div class="col-xs-offset-1 col-xs-10">

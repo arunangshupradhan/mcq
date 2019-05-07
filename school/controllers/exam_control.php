@@ -12,6 +12,7 @@ class Exam_control extends CI_Controller
         $this->load->model('exam_model');
         $this->load->model('admin_model');
         $this->load->model('user_model');
+        $this->load->model('membership_model');
     }
 
     public function index()
@@ -34,18 +35,26 @@ class Exam_control extends CI_Controller
         }
     }
 
-    public function view_all_mocks($message = '')
+    public function view_all_mocks($subscription_id)
     {
         $data = array();
         $data['share'] = true;
         $data['header'] = $this->load->view('header/head', '', TRUE);
-        $data['mocks'] = $this->exam_model->get_all_mocks();
+        if($subscription_id){
+            $data['mocks'] = $this->exam_model->get_mocks_by_course($subscription_id);
+        }else{
+            $data['mocks'] = $this->exam_model->get_all_mocks();
+        }
+        $user_id = $this->session->userdata('user_id');
+        $data['user_details'] = $this->user_model->get_user_info($user_id);
+        $data['subscription_details'] = $this->membership_model->get_offer_by_id($subscription_id);
         $data['categories'] = $this->exam_model->get_categories();
         $data['mock_count'] = $this->exam_model->mock_count($data['categories']);
         $data['top_navi'] = $this->load->view('header/top_navigation', $data, TRUE);
         $data['user_role'] = $this->admin_model->get_user_role();
         $data['content'] = $this->load->view('content/view_mock_list', $data, TRUE);
-        $data['message'] = $message;
+        $data['message'] = '';
+        $data['subscription_id'] = $subscription_id;
         $data['footer'] = $this->load->view('footer/footer', $data, TRUE);
         $this->load->view('home', $data);
     }
@@ -77,7 +86,7 @@ class Exam_control extends CI_Controller
         $this->load->view('home', $data);
     }
 
-    public function mocks_type($type)
+    public function mocks_type()
     {
         $data = array();
         $data['header'] = $this->load->view('header/head', '', TRUE);
@@ -85,14 +94,11 @@ class Exam_control extends CI_Controller
         $data['mock_count'] = $this->exam_model->mock_count($data['categories']);
         $data['top_navi'] = $this->load->view('header/top_navigation', $data, TRUE);
         $data['user_role'] = $this->admin_model->get_user_role();
-            $data['mocks'] = $this->exam_model->get_mocks_by_price($type);
-        if($type === 'free'){
-            $data['category_name'] = 'Free';
-        }else if($type === 'paid'){
-            $data['category_name'] = 'Paid';
-        }else{
-            redirect(base_url('index.php/exam_control/view_all_mocks'));
+        if($this->session->userdata('user_id')){
+            $data['mocks'] = $this->exam_model->get_mocks_by_price_for_loggedin_user();
         }
+
+
         $data['footer'] = $this->load->view('footer/footer', $data, TRUE);
         $data['content'] = $this->load->view('content/view_mock_list', $data, TRUE);
         $this->load->view('home', $data);
@@ -126,11 +132,18 @@ class Exam_control extends CI_Controller
             $this->session->set_flashdata('message', $message);
             redirect(base_url('index.php/login_control'));
         }
-        $data = array();
+        $data = $checck_valid_exam = array();
+        $checck_valid_exam = false;
+        $data['mock'] = $mock = $this->exam_model->get_mock_by_id($id);
+        $price_table_id = $mock->price_table_id;
+        $checck_valid_exam = $this->exam_model->check_valid_exam($price_table_id);
+        if(empty($checck_valid_exam)){
+            redirect(base_url());
+        }
         $data['header'] = $this->load->view('header/head', '', TRUE);
         $data['top_navi'] = $this->load->view('header/top_navigation', $data, TRUE);
         $data['message'] = $message;
-        $data['mock'] = $this->exam_model->get_mock_by_id($id);
+
         if (!$data['mock']) {
             show_404();
         }

@@ -11,6 +11,7 @@ class Admin_control extends CI_Controller {
         
         $this->load->model('exam_model');
         $this->load->model('admin_model');
+        $this->load->model('membership_model');
         if (!$this->session->userdata('log')) {
             redirect(base_url('index.php/login_control'));
         }
@@ -136,6 +137,7 @@ class Admin_control extends CI_Controller {
         $data['cat_id'] = $cat_id;
         $data['footer'] = $this->load->view('footer/admin_footer', $data, TRUE);
         $data['categories'] = $this->exam_model->get_categories();
+        $data['membership'] = $this->membership_model->get_all_memberships();
         $data['content'] = $this->load->view('form/mock_form', $data, TRUE);
         $this->load->view('dashboard', $data);
     }
@@ -242,6 +244,7 @@ class Admin_control extends CI_Controller {
         $data['message'] = $message;
         $data['mock'] = $this->admin_model->get_mock_detail($id);
         $data['ques_count'] = $this->exam_model->question_count_by_id($id);
+        $data['membership'] = $this->membership_model->get_all_memberships();
         $data['content'] = $this->load->view('form/edit_mock_detail', $data, TRUE);
         $data['footer'] = $this->load->view('footer/admin_footer', $data, TRUE);
         $this->load->view('dashboard', $data);
@@ -253,6 +256,7 @@ class Admin_control extends CI_Controller {
         $this->form_validation->set_rules('category', 'Category', 'required|integer');
         $this->form_validation->set_rules('mock_title', 'Mock Title', 'required|min_length[3]');
         $this->form_validation->set_rules('mock_syllabus', 'Syllabus', 'required');
+        $this->form_validation->set_rules('price_table_id', 'Course name', 'required');
         $this->form_validation->set_rules('passing_score', 'Passing Score', 'required|integer|less_than[100]');
         if ($this->form_validation->run() == FALSE) {
             $this->mock_form();

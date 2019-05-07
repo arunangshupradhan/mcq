@@ -45,16 +45,39 @@ class Membership extends CI_Controller
     public function payment_process($id = '')
     {
         if (!$this->session->userdata('log')) {
-            redirect(base_url('index.php/login_control/register'));
+            redirect(base_url('index.php/login_control/register/'.$id));
         }
         if (($id == '') OR !is_numeric($id)) {
             show_404();
         }
         $membership = $this->membership_model->get_offer_by_id($id);
+        print_r($membership);
         if (!$membership) {
             show_404();
         }
         $this->load->model('admin_model');
+        if($membership->price_table_cost == 0){
+            $user_id = $this->session->userdata('user_id');
+
+
+            $duration = '+ '. $membership->offer_duration.' '. $membership->offer_type.'';
+
+            $subscription_start = date("Y-m-d");
+            $subscription_end = date("Y-m-d", strtotime(date("Y-m-d", strtotime($subscription_start)) . $duration));
+
+            $subscription_info = array();
+            $subscription_info['subscription_id'] = $id;
+            $subscription_info['subscription_start'] = strtotime($subscription_start);
+            $subscription_info['subscription_end'] = strtotime($subscription_end);
+            $this->admin_model->set_subscription($subscription_info);
+            $message = '<div class="alert alert-sucsess alert-dismissable">'
+                . '<button type="button" class="close" data-dismiss="alert" aria-hidden="TRUE">&times;</button>'
+                . 'You subscribed successfully!</div>';
+            $this->session->set_flashdata('message', $message);
+            redirect(base_url() . 'login_control/dashboard_control/' . $this->session->userdata('user_id'));
+
+        }
+
         $payment_settings = $this->admin_model->get_paypal_settings();
 
         if ($payment_settings->sandbox == 1) {

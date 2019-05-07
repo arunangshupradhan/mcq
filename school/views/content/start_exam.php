@@ -12,97 +12,117 @@
             <?php if ($message) echo $message; ?>
         </div>
     </div>
-</div>
-<form id="anserForm" action="<?= base_url('index.php/exam_control'); ?>" method="post">
-    <div class="container question_content">
-        <input type="hidden" name="exam_id" value="<?= $mock->title_id; ?>">
-        <input type="hidden" name="total_ques" value="<?= $mock->random_ques_no; ?>">
-        <input type="hidden" name="token" value="<?= time(); ?>">
-        <div id="Carousel" class="carousel col-xs-10 col-xs-offset-1" data-interval="false" data-wrap="false">
-            <div class="carousel-inner">
-                <?php foreach ($questions as $ques): $type = ($ques->option_type == 'Radio') ? 'radio' : 'checkbox'; ?>
-                    <?php $i = 0; ?>
-                    <div class="item <?= ($count == $num_of_ques) ? 'active' : '' ?>">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <p>Question <?= ($num_of_ques - $count + 1) . ' of ' . $num_of_ques; ?>
-                                    <span class="pull-right">Time Remaining:
-                                        <span class="time-duration"></span>
-                                    </span>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-offset-1 col-sm-10 col-xs-offset-0 col-xs-12">
-                                <h3><?= $ques->question ?></h3><br/>
-
-                                <?php if (!empty($ques->media_type) AND ($ques->media_type != '')  AND ($ques->media_link != '')) {
-                                    switch ($ques->media_type) {
-                                        case 'youtube':
-                                            parse_str(parse_url($ques->media_link, PHP_URL_QUERY));
-                                            echo '<iframe width="560" height="315" src="//www.youtube.com/embed/'.$v.'" frameborder="0"></iframe>';
-                                            break;
-                                        case 'audio':
-                                            $link = '<audio controls>';
-                                              $link .= '<source src="'.base_url("question-media/".$ques->media_link).'" type="audio/mpeg">';
-                                              $link .= '<source src="'.base_url("question-media/".$ques->media_link).'" type="audio/ogg">';
-                                              $link .= '<source src="'.base_url("question-media/".$ques->media_link).'" type="audio/wav">';
-                                            $link .= '</audio>';
-                                            echo $link;
-                                            break;
-                                        case 'video':
-                                            $link = '<p><video width="600" height="400" controls>';
-                                              $link .= '<source src="'.base_url("question-media/".$ques->media_link).'" type="video/mp4">';
-                                              $link .= '<source src="'.base_url("question-media/".$ques->media_link).'" type="video/ogg">';
-                                              $link .= '<source src="'.base_url("question-media/".$ques->media_link).'" type="video/webm">';
-                                            $link .= '</audio></p>';
-                                            echo $link;
-                                            break;
-                                        case 'image':
-                                            echo '<img src="'.base_url("question-media/".$ques->media_link).'" alt="image" height="auto" width="500px">';
-                                            break;
-                                        default:
-                                            break;
-                                    }
-                                    echo "<br/><br/>";
-                                }
-                                ?>
-                                <?php
-                                foreach ($answers[$ques->ques_id][0] as $ans) {
-                                    if ($ans->right_ans == 1)
-                                        $i++;
-                                    ?>
-                                    <input type="hidden" name="num_of_ans[<?= $ques->ques_id; ?>]" value="<?= $i; ?>">
-                                    <div class="<?= $type ?>">
-                                        <label>
-                                            <input type="<?= $type ?>" name="ans[<?= $ques->ques_id; ?>]<?= ($type == 'checkbox') ? '[]' : '' ?>" value="<?= form_prep($ans->right_ans); ?>"> <?= form_prep($ans->answer); ?>
-                                            <?php //echo base_url("answer-images/".$ans->ans_id.".jpg");
-                                            if (file_exists("answer-images/".$ans->ans_id.".jpg")) {
-                                                echo "<br/>";
-                                                echo '<img src="'.base_url("answer-images/".$ans->ans_id.".jpg").'" alt="image" height="auto" width="250px">';
-                                                echo "<br/><br/>";
-                                            }
-                                            ?>
-                                        </label>
+    <div class="row">
+        <div class="col-md-8">
+            <form id="anserForm" action="<?= base_url('index.php/exam_control'); ?>" method="post">
+            <div class="question_content">
+                <input type="hidden" name="exam_id" value="<?= $mock->title_id; ?>">
+                <input type="hidden" name="total_ques" value="<?= $mock->random_ques_no; ?>">
+                <input type="hidden" name="token" value="<?= time(); ?>">
+                <div id="Carousel" class="carousel col-xs-10 col-xs-offset-1" data-interval="false" data-wrap="false">
+                    <div class="carousel-inner">
+                        <?php foreach ($questions as $ques): $type = ($ques->option_type == 'Radio') ? 'radio' : 'checkbox'; ?>
+                            <?php $i = 0; ?>
+                            <div class="item <?= ($count == $num_of_ques) ? 'active' : '' ?>">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p>Question <?= ($num_of_ques - $count + 1) . ' of ' . $num_of_ques; ?>
+                                           <!-- <span class="pull-right">Time Remaining:
+                                            <span class="time-duration"></span>-->
+                                        </span>
+                                        </p>
                                     </div>
-                            <?php } ?>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-offset-1 col-sm-10 col-xs-offset-0 col-xs-12">
+                                        <h3><?= $ques->question ?></h3><br/>
+
+                                        <?php if (!empty($ques->media_type) AND ($ques->media_type != '')  AND ($ques->media_link != '')) {
+                                            switch ($ques->media_type) {
+                                                case 'youtube':
+                                                    parse_str(parse_url($ques->media_link, PHP_URL_QUERY));
+                                                    echo '<iframe width="560" height="315" src="//www.youtube.com/embed/'.$v.'" frameborder="0"></iframe>';
+                                                    break;
+                                                case 'audio':
+                                                    $link = '<audio controls>';
+                                                    $link .= '<source src="'.base_url("question-media/".$ques->media_link).'" type="audio/mpeg">';
+                                                    $link .= '<source src="'.base_url("question-media/".$ques->media_link).'" type="audio/ogg">';
+                                                    $link .= '<source src="'.base_url("question-media/".$ques->media_link).'" type="audio/wav">';
+                                                    $link .= '</audio>';
+                                                    echo $link;
+                                                    break;
+                                                case 'video':
+                                                    $link = '<p><video width="600" height="400" controls>';
+                                                    $link .= '<source src="'.base_url("question-media/".$ques->media_link).'" type="video/mp4">';
+                                                    $link .= '<source src="'.base_url("question-media/".$ques->media_link).'" type="video/ogg">';
+                                                    $link .= '<source src="'.base_url("question-media/".$ques->media_link).'" type="video/webm">';
+                                                    $link .= '</audio></p>';
+                                                    echo $link;
+                                                    break;
+                                                case 'image':
+                                                    echo '<img src="'.base_url("question-media/".$ques->media_link).'" alt="image" height="auto" width="500px">';
+                                                    break;
+                                                default:
+                                                    break;
+                                            }
+                                            echo "<br/><br/>";
+                                        }
+                                        ?>
+                                        <?php
+                                        foreach ($answers[$ques->ques_id][0] as $ans) {
+                                            if ($ans->right_ans == 1)
+                                                $i++;
+                                            ?>
+                                            <input type="hidden" name="num_of_ans[<?= $ques->ques_id; ?>]" value="<?= $i; ?>">
+                                            <div class="<?= $type ?>">
+                                                <label>
+                                                    <input type="<?= $type ?>" name="ans[<?= $ques->ques_id; ?>]<?= ($type == 'checkbox') ? '[]' : '' ?>" value="<?= form_prep($ans->right_ans); ?>"> <?= form_prep($ans->answer); ?>
+                                                    <?php //echo base_url("answer-images/".$ans->ans_id.".jpg");
+                                                    if (file_exists("answer-images/".$ans->ans_id.".jpg")) {
+                                                        echo "<br/>";
+                                                        echo '<img src="'.base_url("answer-images/".$ans->ans_id.".jpg").'" alt="image" height="auto" width="250px">';
+                                                        echo "<br/><br/>";
+                                                    }
+                                                    ?>
+                                                </label>
+                                            </div>
+                                        <?php } ?>
+                                    </div>
+                                </div><br/><br/>
                             </div>
-                        </div><br/><br/>
+                            <?php
+                            $count++;
+                        endforeach;
+                        ?>
                     </div>
-                    <?php
-                    $count++;
-                endforeach;
-                ?>
+                </div>
             </div>
+            <div class=" me-control-btn">
+                <a class="btn btn-lg btn-info col-xs-5 col-xs-offset-0 me-prev" href="#Carousel" data-slide="next" disabled> &laquo; Prev<span class="hidden-xxs">ious Question</span></a>
+                <a class="btn btn-lg btn-info col-xs-5 col-xs-offset-2 me-next" href="#Carousel" data-slide="prev"> Next <span class="hidden-xxs">Question</span> &raquo; </a>
+            </div>
+            <p id="submit_button" style="margin: 30px;"></p>
+            <br/><br/>
+        </form>
+        </div>
+
+
+
+
+
+
+        <div class="col-md-4">
+ <span class="pull-right">Time Remaining:
+                                            <span class="time-duration"></span>
         </div>
     </div>
-    <div class="container me-control-btn">
-        <a class="btn btn-lg btn-info col-xs-5 col-xs-offset-0 me-prev" href="#Carousel" data-slide="next" disabled> &laquo; Prev<span class="hidden-xxs">ious Question</span></a>
-        <a class="btn btn-lg btn-info col-xs-5 col-xs-offset-2 me-next" href="#Carousel" data-slide="prev"> Next <span class="hidden-xxs">Question</span> &raquo; </a>
-    </div>
-    <p id="submit_button" style="margin: 30px;"></p>
-    <br/><br/>
-</form>
+
+
+
+
+
+</div>
+
 <script language="JavaScript"><!--
 javascript:window.history.forward(1);
 //--></script>

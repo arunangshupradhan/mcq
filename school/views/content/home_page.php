@@ -33,9 +33,9 @@
                     <?php if (!$this->session->userdata('log')): ?>
                         <?php if ($this->session->userdata('student_can_register')): ?>
                         <p>
-                            <a class="btn btn-primary register_open" href="#register">Register</a>
+                            <a class="btn btn-primary" href="<?php echo base_url('/index.php/login_control/register'); ?>">Register</a>
                             <span class="small"> or </span>
-                         <a class="btn btn-primary login_open" href="#login">Login</a>
+                         <a class="btn btn-primary login_open" href="">Login</a>
                         </p>
                         <?php endif; ?>
                     <?php endif; ?>

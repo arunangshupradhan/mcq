@@ -12,6 +12,8 @@ class Login_control extends CI_Controller
         $this->load->model('admin_model');
         $this->load->model('exam_model');
         $this->load->model('login_model');
+        $this->load->model('user_model');
+        $this->load->model('membership_model');
     }
 
     public function index($message = '')
@@ -224,6 +226,7 @@ class Login_control extends CI_Controller
         if ($id == 0) {
             $this->index();
         }
+        $user_id = $this->session->userdata('user_id');
         $data = array();
         $data['class'] = 00; // class control value left digit for main manu rigt digit for submenu
         $data['header'] = $this->load->view('header/admin_head', $data, TRUE);
@@ -231,14 +234,17 @@ class Login_control extends CI_Controller
         $data['sidebar'] = $this->load->view('sidebar/admin_sidebar', $data, TRUE);
         $data['title'] = 'Student Dashboard';
         $data['message'] = $message;
+        $data['user_details'] = $this->user_model->get_user_info($user_id);;
         $data['results'] = $this->exam_model->get_my_results($id);
         $data['content'] = $this->load->view('student_dashboard', $data, TRUE);
         $data['footer'] = $this->load->view('footer/admin_footer', '', TRUE);
         $this->load->view('dashboard', $data);
     }
 
-    public function register($message = '')
+    public function register($id = '')
     {
+        $this->session->set_userdata('course_id', $id);
+        $message = '';
         if ($_POST) {
             if ($this->input->post('token') == $this->session->userdata('token')) {
                 exit('Can\'t re-submit the form');
@@ -257,13 +263,26 @@ class Login_control extends CI_Controller
                 $info['user_role_id'] = ($this->input->post('user_role'))?$this->input->post('user_role'):5;
                 $info['user_pass'] = md5($this->input->post('user_pass'));
                 $info['user_from'] = date('Y-m-d H:i:s');
+                $info['active'] = 1;
 
                 // Check athentication
-                if ($this->login_model->register($info)) {
+                $user_id = $this->login_model->register($info);
+                if ($user_id) {
                     $mysecret = 'galua.mugda';
                     $key = sha1($mysecret . $info['user_email'] . $this->session->userdata['brand_name']);
 
-                    $from = $this->session->userdata['support_email'];
+
+                    $this->session->set_userdata('log', TRUE);
+                    $this->session->set_userdata('user_role', 'Student');
+                    $this->session->set_userdata('user_name', $info['user_name']);
+                    $this->session->set_userdata('user_email', $info['user_email']);
+                    $this->session->set_userdata('user_id', $user_id);
+                    $this->session->set_userdata('user_role_id', 5);
+
+
+                    redirect(base_url() . 'index.php/membership/payment_process/' . $this->input->post('course_id'));
+
+                    /*$from = $this->session->userdata['support_email'];
                     $to = $info['user_email'];
                     $suject = 'Thank you for register with ' . $this->session->userdata['brand_name'];
                     $message_body = 'Click the link below to activate your account.<br/> '
@@ -288,7 +307,7 @@ class Login_control extends CI_Controller
                     if (count($_POST) > 0) {
                         $_POST = array();
                     }
-                    $this->index($message);
+                    $this->index($message);*/
                 } else {
                     $message= '<div class="alert alert-danger alert-dismissable">'
                             . '<button type="button" class="close" data-dismiss="alert" aria-hidden="TRUE">&times;</button>'
@@ -298,6 +317,7 @@ class Login_control extends CI_Controller
         }
 
         $data = array();
+        $data['all_membership'] = $this->membership_model->get_all_memberships();
         $data['header'] = $this->load->view('header/head', '', TRUE);
         $data['top_navi'] = $this->load->view('header/top_navigation', $data, TRUE);
         $data['message'] = $message;

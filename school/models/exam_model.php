@@ -60,7 +60,34 @@ class Exam_model extends CI_Model
                         ->get()->result();
         return $result;
     }
-
+    public function get_mocks_by_price_for_loggedin_user()
+    {
+        $user_details = array();
+        $userId = $this->session->userdata('user_id');
+        $user_details = $this->get_user_info($userId);
+        $subscription_id = $user_details->subscription_id;
+        $result = $this->db->select('*')
+        ->select("exam_title.active AS exam_active")
+        ->from('exam_title')
+        ->where('exam_title.exam_price', 0)
+        ->where('exam_title.price_table_id', $subscription_id)
+        ->join('categories', 'categories.category_id = exam_title.category_id')
+        ->join('users', 'users.user_id = exam_title.user_id')
+        ->get()->result();
+        return $result;
+    }
+    public function get_mocks_by_course($subscription_id)
+    {
+        $result = $this->db->select('*')
+            ->select("exam_title.active AS exam_active")
+            ->from('exam_title')
+            ->where('exam_title.exam_price', 0)
+            ->where('exam_title.price_table_id', $subscription_id)
+            ->join('categories', 'categories.category_id = exam_title.category_id')
+            ->join('users', 'users.user_id = exam_title.user_id')
+            ->get()->result();
+        return $result;
+    }
     public function get_mocks_by_price($type)
     {
         if($type === 'free'){
@@ -84,7 +111,17 @@ class Exam_model extends CI_Model
         }
         return $result;
     }
-
+    public function get_user_info($id = '')
+    {
+        if ($id == '') {
+            $id = $this->session->userdata('user_id');
+        }
+        $this->db->select('*');
+        $this->db->from('users');
+        $this->db->where('user_id', $id);
+        $result = $this->db->get()->row();
+        return $result;
+    }
     public function get_mock_title($id)
     {
         if (!is_numeric($id)) {
@@ -165,7 +202,17 @@ class Exam_model extends CI_Model
                 ->row();
         return $result;
     }
-
+    public function check_valid_exam($subscription_id = 0)
+    {
+        $user_id = $this->session->userdata('user_id');
+        $result = $this->db->select('*')
+            ->from('users')
+            ->where('users.subscription_id', $subscription_id)
+            ->where('users.user_id', $user_id)
+            ->get()
+            ->row();
+        return $result;
+    }
     public function get_question_by_id($id)
     {
         $result = $this->db->select('*')
