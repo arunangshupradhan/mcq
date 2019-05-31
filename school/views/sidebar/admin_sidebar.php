@@ -6,6 +6,15 @@ if (isset($class)) {
 ?>
 <!-- \ Sidebar -->
 <ul class="nav sidebar">
+	<li>
+		<div class="dbd_profile">
+			<div class="dbd_candidate_img" style=""></div>
+			<div class="dbd_candidate">
+				<h4>Candidate Name</h4>
+				<a href="#">Edit Profile</a>
+			</div>
+		</div>
+	</li>
     <li>
         <a href="<?=base_url('index.php/dashboard/'.$this->session->userdata('user_id')); ?>">
             <i class="fa fa-dashboard"></i> Dashboard
@@ -38,11 +47,19 @@ if (isset($class)) {
     <?php } else { ?>
         <li><a href="<?=base_url('index.php/exam_control/view_results');?>" class="<?=($active==2)?"active":'';?>"><i class="fa fa-puzzle-piece"></i> View Results</a></li>
     <?php } ?>
-    
+    <?php if ($this->session->userdata['user_role_id'] <= 3) { ?>
+    <li><a href="#" class="sub <?=($active==50)?"active":'';?>"><i class="fa fa-bullseye"></i> Live class Manage</a>
+        <ul>
+            <li><a href="<?=base_url('/index.php/admin_control/create_online_class');?>" class="<?=($class==21)?"current":'';?>">Add Class</a></li>
+            <li><a href="<?=base_url('/index.php/admin_control/view_live_classes');?>" class="<?=($class==21)?"current":'';?>">View All Class</a></li>
+        </ul>
+    </li>
+    <?php } ?>
+    <?php if ($this->session->userdata['user_role_id'] == 5) { ?>
+        <li><a href="/index.php/exam_control/my_course" class="<?=($active==50)?"active":'';?>"><i class="fa fa-bullseye"></i>My Courses</a>
+        </li>
+    <?php } ?>
 
-           
-    
-    
     <?php if ($this->session->userdata('commercial')) { ?>
     <?php if ($this->session->userdata['user_role_id'] <= 2) { ?>
     <li><a href="#" class="sub <?=($active==8)?"active":'';?>"><i class="fa fa-list"> </i> Membership</a>

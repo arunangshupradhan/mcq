@@ -51,7 +51,18 @@ class Admin_control extends CI_Controller {
         $data['footer'] = $this->load->view('footer/admin_footer', '', TRUE);
         $this->load->view('dashboard', $data);
     }
-
+    public function view_live_classes($message = '')
+    {
+        $data['class'] = 50; // class control value left digit for main manu rigt digit for submenu
+        $data['header'] = $this->load->view('header/admin_head', '', TRUE);
+        $data['top_navi'] = $this->load->view('header/admin_top_navigation', '', TRUE);
+        $data['sidebar'] = $this->load->view('sidebar/admin_sidebar', $data, TRUE);
+        $data['message'] = $message;
+        $data['live_classes'] = $this->admin_model->get_online_class();
+        $data['content'] = $this->load->view('content/view_live_classes', $data, TRUE);
+        $data['footer'] = $this->load->view('footer/admin_footer', '', TRUE);
+        $this->load->view('dashboard', $data);
+    }
     public function view_my_mock_detail($id, $message = '')
     {
         if (!is_numeric($id)) {
@@ -141,7 +152,44 @@ class Admin_control extends CI_Controller {
         $data['content'] = $this->load->view('form/mock_form', $data, TRUE);
         $this->load->view('dashboard', $data);
     }
+    public function create_online_class($message = '', $cat_id = '')
+    {
+        //  echo "<pre/>"; print_r($this->session->all_userdata()); exit();
+        $userId = $this->session->userdata('user_id');
+        $data = array();
+        $data['class'] = 50; // class control value left digit for main manu rigt digit for submenu
+        $data['header'] = $this->load->view('header/admin_head', '', TRUE);
+        $data['top_navi'] = $this->load->view('header/admin_top_navigation', $data, TRUE);
+        $data['sidebar'] = $this->load->view('sidebar/admin_sidebar', $data, TRUE);
+        $data['message'] = $message;
+        $data['cat_id'] = $cat_id;
+        $data['footer'] = $this->load->view('footer/admin_footer', $data, TRUE);
+        $data['categories'] = $this->exam_model->get_categories();
+        $data['membership'] = $this->membership_model->get_all_memberships();
+        $data['all_course'] = $this->membership_model->get_all_memberships();
+        $data['content'] = $this->load->view('form/create_online_class', $data, TRUE);
+        $this->load->view('dashboard', $data);
+    }
+    public function edit_online_class($class_id = '')
+    {
 
+
+        $userId = $this->session->userdata('user_id');
+        $data = array();
+        $data['online_class_table_data'] = $this->exam_model->get_online_class_by_id($class_id);
+        $data['online_class_to_course_data'] = $this->exam_model->get_course_related_to_online_class_by_id($class_id);
+        $data['class'] = 50; // class control value left digit for main manu rigt digit for submenu
+        $data['header'] = $this->load->view('header/admin_head', '', TRUE);
+        $data['top_navi'] = $this->load->view('header/admin_top_navigation', $data, TRUE);
+        $data['sidebar'] = $this->load->view('sidebar/admin_sidebar', $data, TRUE);
+        $data['class_id'] = $class_id;
+        $data['footer'] = $this->load->view('footer/admin_footer', $data, TRUE);
+        $data['categories'] = $this->exam_model->get_categories();
+        $data['membership'] = $this->membership_model->get_all_memberships();
+        $data['all_course'] = $this->membership_model->get_all_memberships();
+        $data['content'] = $this->load->view('form/edit_online_class', $data, TRUE);
+        $this->load->view('dashboard', $data);
+    }
     public function question_form($message = '', $title_id = 0, $mock_title = 'Create Question', $question_no = 1)
     {
         $data = array();
@@ -195,6 +243,8 @@ class Admin_control extends CI_Controller {
             $this->load->library('form_validation');
             $this->form_validation->set_rules('mock_title', 'Mock Title', 'required|min_length[3]');
             $this->form_validation->set_rules('mock_syllabus', 'Syllabus', 'required');
+            $this->form_validation->set_rules('positive_mark', 'Positive mark', 'required');
+            $this->form_validation->set_rules('negative_mark', 'Negative mark', 'required');
             $this->form_validation->set_rules('passing_score', 'Passing Score', 'required|integer|less_than[100]');
             $this->form_validation->set_rules('random_ques', 'Random Quesen', 'required|integer');
             if ($this->form_validation->run() !== FALSE) {
@@ -249,7 +299,40 @@ class Admin_control extends CI_Controller {
         $data['footer'] = $this->load->view('footer/admin_footer', $data, TRUE);
         $this->load->view('dashboard', $data);
     }
+    public function do_online_class($message = '')
+    {
+        $this->load->library('form_validation');
+        $this->form_validation->set_rules('category', 'category', 'required|integer');
+        $this->form_validation->set_rules('mock_title', 'Mock Title', 'required|min_length[3]');
+        $this->form_validation->set_rules('iframe', 'Iframe', 'required');
+        $this->form_validation->set_rules('description', 'Description', 'required');
+        $this->form_validation->set_rules('start_time', 'Start time', 'required');
+        $this->form_validation->set_rules('end_time', 'End time', 'required');
+        if ($this->form_validation->run() == FALSE) {
+            $this->create_online_class();
+        } else {
+            if(isset($_POST['class_id'])){
+                $this->admin_model->edit_online_class();
+                if ($_POST['class_id']) {
+                    $message = '<div class="alert alert-success alert-dismissable">'
+                        . '<button type="button" class="close" data-dismiss="alert" aria-hidden="TRUE">&times;</button>'
+                        . 'Exam created successfully! Now creat questions.'
+                        . '</div>';
+                    redirect('/index.php/admin_control/edit_online_class/'.$_POST['class_id'], 'refresh');
+                }
+            }else{
+                $title_id = $this->admin_model->add_online_class();
+                if ($title_id) {
+                    $message = '<div class="alert alert-success alert-dismissable">'
+                        . '<button type="button" class="close" data-dismiss="alert" aria-hidden="TRUE">&times;</button>'
+                        . 'Exam created successfully! Now creat questions.'
+                        . '</div>';
+                    $this->create_online_class();
+                }
+            }
 
+        }
+    }
     public function create_mock($message = '')
     {
         $this->load->library('form_validation');
@@ -257,6 +340,8 @@ class Admin_control extends CI_Controller {
         $this->form_validation->set_rules('mock_title', 'Mock Title', 'required|min_length[3]');
         $this->form_validation->set_rules('mock_syllabus', 'Syllabus', 'required');
         $this->form_validation->set_rules('price_table_id', 'Course name', 'required');
+        $this->form_validation->set_rules('positive_mark', 'Positive mark', 'required');
+        $this->form_validation->set_rules('negative_mark', 'Negative mark', 'required');
         $this->form_validation->set_rules('passing_score', 'Passing Score', 'required|integer|less_than[100]');
         if ($this->form_validation->run() == FALSE) {
             $this->mock_form();
@@ -828,7 +913,26 @@ $yourUniqueId=$this->input->post('ans_id');
             }
         }
     }
-
+    public function delete_online_course($id)
+    {
+        if (!is_numeric($id)) {
+            return FALSE;
+        }
+        $user_id = $this->session->userdata('user_id');
+        $user_role_id = $this->session->userdata('user_role_id');
+        if ($user_role_id <= 2) {
+            if ($this->admin_model->delete_online_course($id)) {
+                $message = '<div class="alert alert-success alert-dismissable">'
+                    . '<button type="button" class="close" data-dismiss="alert" aria-hidden="TRUE">&times;</button>'
+                    . 'The Online Class has Deleted successfully.'
+                    . '</div>';
+                redirect(base_url('/index.php/admin_control/view_live_classes'));
+            } else {
+                $message = '<div class="alert alert-danger">An ERROR occurred! Please try again.</div>';
+                redirect(base_url('/index.php/admin_control/view_live_classes'));
+            }
+        }
+    }
     public function delete_question($id)
     {
         if (!is_numeric($id)) {

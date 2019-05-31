@@ -116,7 +116,7 @@
                     </div>            
                 </div>
             </div>
-            <div class="form-group">
+            <div class="form-group" style="display: none;">
                 <label for="random_ques" class="col-sm-offset-0 col-lg-2 col-xs-offset-1 col-xs-3 control-label mobile">Random Questions</label>
                 <div class="col-sm-2 col-md-3 col-xs-6 col-mb">
                     <?php echo form_input('random_ques', $mock->random_ques_no, 'id="random_ques" placeholder="Numbers only" class="form-control" required="required"') ?>
@@ -125,7 +125,22 @@
                     <p class="help-block info"><strong><i class="glyphicon glyphicon-warning-sign"></i> Not more than <?=$ques_count;?> </strong></p>
                 </div>
             </div>
-
+            <div class="form-group">
+                <label for="exam_price" class="col-sm-offset-0 col-lg-2 col-xs-offset-1 col-xs-3 control-label mobile">Positive Mark:</label>
+                <div class="col-sm-3 col-xs-6 col-mb">
+                    <div class="input-group">
+                        <?php echo form_input('positive_mark', $mock->positive_mark, 'id="positive_mark" placeholder="Positive Mark" class="form-control"') ?>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="exam_price" class="col-sm-offset-0 col-lg-2 col-xs-offset-1 col-xs-3 control-label mobile">Negative Mark:</label>
+                <div class="col-sm-3 col-xs-6 col-mb">
+                    <div class="input-group">
+                        <?php echo form_input('negative_mark', $mock->negative_mark, 'id="negative_mark" placeholder="Negative Mark" class="form-control"') ?>
+                    </div>
+                </div>
+            </div>
             <div class="form-group">
               <label class="col-xs-offset-3 col-sm-8 col-xs-offset-2 col-xs-9">
                   <p class="text-muted"><i class="glyphicon glyphicon-info-sign"> </i> All fields are Required.</p>

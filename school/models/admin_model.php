@@ -220,6 +220,8 @@ class Admin_model extends CI_Model
         $info['syllabus'] = $this->input->post('mock_syllabus', TRUE);
         $info['pass_mark'] = $this->input->post('passing_score', TRUE);
         $info['price_table_id'] = $this->input->post('price_table_id', TRUE);
+        $info['positive_mark'] = $this->input->post('positive_mark', TRUE);
+        $info['negative_mark'] = $this->input->post('negative_mark', TRUE);
         $info['exam_price'] = ($this->input->post('price'))?$this->input->post('price', TRUE):0;
         $info['exam_created'] = date('Y-m-d H:i:s');
         $info['feature_img_name'] = ($upload_data == '')?'':$upload_data;
@@ -236,7 +238,95 @@ class Admin_model extends CI_Model
             }
         }
     }
+    public function course_to_online_class($data = array())
+    {
+        $this->db->insert('course_to_online_class', $data);
+        return true;
+    }
+    public function get_online_class()
+    {
+        $result = $this->db->select('*')
+            ->from('online_class')
+            ->order_by("id", "desc")
+            ->get()->result();
+        return $result;
+    }
+    public function add_online_class($upload_data = '')
+    {
+        date_default_timezone_set($this->session->userdata['time_zone']);
+        $info = array();
 
+        $info['category_id'] = $this->input->post('category', TRUE);
+        $info['title'] = $this->input->post('mock_title', TRUE);
+        $info['iframe'] = $this->input->post('iframe', TRUE);
+        $info['description'] = $this->input->post('description', TRUE);
+        $info['start_time'] = $this->input->post('start_time', TRUE);
+        $info['end_time'] = $this->input->post('end_time', TRUE);
+        $this->db->insert('online_class', $info);
+        $last_id = $this->db->insert_id();
+
+        $course = $course_array = array();
+        $course = $this->input->post('course', TRUE);
+
+        if(!empty($course)){
+            foreach ($course as $course_value){
+                $course_array['course_id'] = $course_value;
+                $course_array['online_class_id'] = $last_id;
+                $this->course_to_online_class($course_array);
+            }
+        }
+
+        if ($last_id) {
+            return $this->db->insert_id();
+        } else {
+            return FALSE;
+        }
+    }
+    public function edit_online_class()
+    {
+
+        $info = array();
+
+        $class_id = $this->input->post('class_id', TRUE);
+        $info['category_id'] = $this->input->post('category', TRUE);
+        $info['title'] = $this->input->post('mock_title', TRUE);
+        $info['iframe'] = $this->input->post('iframe', TRUE);
+        $info['description'] = $this->input->post('description', TRUE);
+        $info['start_time'] = $this->input->post('start_time', TRUE);
+        $info['end_time'] = $this->input->post('end_time', TRUE);
+        $this->db->where('id', $class_id);
+        $this->db->update('online_class', $info);
+
+        $course = $course_array = array();
+        $course = $this->input->post('course', TRUE);
+
+
+        $this -> db ->where('online_class_id', $class_id);
+        $this -> db ->delete('course_to_online_class');
+
+
+        if(!empty($course)){
+            foreach ($course as $course_value){
+                $course_array['course_id'] = $course_value;
+                $course_array['online_class_id'] = $class_id;
+                $this->course_to_online_class($course_array);
+            }
+        }
+
+        if ($class_id) {
+            return $this->db->insert_id();
+        } else {
+            return FALSE;
+        }
+    }
+    public function delete_online_course($id)
+    {
+        $this->db->where('id', $id)
+            ->delete('online_class');
+        $this->db->where('online_class_id', $id)
+            ->delete('course_to_online_class');
+        return true;
+    }
     public function mute_category($id)
     {
         $data = array();
@@ -362,6 +452,8 @@ class Admin_model extends CI_Model
         $info = array();
         $info['category_id'] = $this->input->post('category', TRUE);
         $info['title_name'] = $this->input->post('mock_title', TRUE);
+        $info['positive_mark'] = $this->input->post('positive_mark', TRUE);
+        $info['negative_mark'] = $this->input->post('negative_mark', TRUE);
         $info['user_id'] = $this->session->userdata['user_id'];
         $info['syllabus'] = $this->input->post('mock_syllabus', TRUE);
         $info['pass_mark'] = $this->input->post('passing_score', TRUE);

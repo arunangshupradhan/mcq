@@ -28,11 +28,19 @@
                             <?php 
                             $i = 1;
                             foreach ($results as $result) {
+
                             ?>
                                 <tr class="<?= ($i & 1) ? 'even' : 'odd'; ?>">
                                     <td><?= $result->title_name; ?></td>
-                                    <td class="hidden-xxs"><?= ($result->result_percent >= $result->pass_mark) ? '<span class="label label-primary">PASS</span>' : '<span class="label label-warning">FAIL</span>' ?></td>
-                                    <td class="hidden-xxs"><?php echo $result->result_percent; ?>%</td>
+                                    <td class="hidden-xxs"><?= (($result->result_percent >= $result->pass_mark) && ($result->mark_obtain_sign == '+')) ? '<span class="label label-primary">PASS</span>' : '<span class="label label-warning">FAIL</span>' ?></td>
+                                    <td class="hidden-xxs">
+                                        <?php
+                                        if($result->mark_obtain_sign == '-'){
+                                            echo $result->mark_obtain_sign;
+                                        }
+                                        ?>
+
+                                        <?php echo $result->result_percent; ?>%</td>
                                     <td class="hidden-xs"><?= date("D, d M", strtotime($result->exam_taken_date)); ?></td>
                                     <td class="text-center" style=" width: 17%">
                                         <div class="btn-group">

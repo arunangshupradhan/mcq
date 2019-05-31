@@ -34,6 +34,26 @@
                         <dd><?=$results->question_answered?></dd>
                         <dt>Passing Score: </dt>
                         <dd><?=$results->pass_mark?>%</dd>
+                        <dt>Mark Obtained: </dt>
+                        <dd>
+                            <?php
+                            if($results->mark_obtain_sign == '-'){
+                                echo '-'.$results->result_percent.'%';
+                            }else{
+                                echo $results->result_percent.'%';
+                            }
+                            ?>
+                        </dd>
+                        <dt>Result: </dt>
+                        <dd>
+                            <?php
+                            if(($results->pass_mark < $results->result_percent) ||($results->pass_mark == $results->result_percent)){
+                                echo 'Pass';
+                            }else{
+                                echo 'Fail';
+                            }
+                            ?>
+                        </dd>
                     </dl>
                 </div>
             </div>
@@ -54,43 +74,69 @@
             </div>
         </div>
     </div><!-- /.row -->
-    <h3 class="text-center">*** Result ***</h3>
-    <div class="container">
-        <dl class="dl-horizontal">
-            <dt class="assessment">Assessment: </dt>
-            <dd>
-                <blockquote>
-                    <p class="lead">
-                        <?=($results->result_percent >= $results->pass_mark) ? '<span class="label label-primary">PASS</span>' : '<span class="label label-warning">FAIL</span>' ?>
-                    </p>
-                </blockquote>
-            <dd>
-        </dl>
-    </div>
+<h3>Result details</h3>
     <div class="row">
         <div class="col-xs-12">
-            <div class="result-score">
-                <p><?=$results->user_name?>'s Score (<?=$results->result_percent?>%)</p>
-            </div>
-            <div class="progress progress-striped">
-                <div class="progress-bar progress-bar-<?=($results->result_percent >= $results->pass_mark)?'success':'danger'?>" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: <?=$results->result_percent?>%">
-                    <span class="sr-only"><?=$results->result_percent?>% Complete (success)</span>
-                </div>
-            </div>
+            <table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered">
+                <thead>
+                <tr>
+                    <td>SL No.</td>
+                    <td>Question</td>
+                    <td>Options</td>
+                    <td>My Answer</td>
+                    <td>My Marks</td>
+                    <td>Right Answer</td>
+                    <td>Mark Obtain</td>
+
+                </tr>
+                </thead>
+                <tbody>
+                <?php
+                $answer[] = array();
+                $i = 1;
+                foreach($answer_list as $answer_list_value){?>
+                <tr>
+                    <td><?php echo $i; ?></td>
+                    <td><?php echo $answer_list_value->question; ?></td>
+                    <td>
+                        <?php $user_answer = $right_answer = ''; $s = 1;
+                        foreach($answer_list_value->all_options as $val){ ?>
+                            <?php
+                                echo $s.') '.$val->answer;
+                                if(!empty($val->ans)){
+                                    $user_answer .=  $s.') '.$val->answer.'<br>';
+                                    $mark_obtain = '';
+                                    foreach ($val->ans as $mark){
+                                        if($mark->operator == '-'){
+                                            $mark_obtain = '-'.$mark->mark;
+                                            break;
+                                        }else{
+                                            $mark_obtain = $mark->mark;
+                                        }
+                                    }
+                                }
+                                if($val->right_ans == 1){
+                                    $right_answer .=  $s.') '.$val->answer.'<br>';
+                                }
+
+                            ?><br>
+                        <?php $s++; } ?>
+                    </td>
+                    <td>
+                        <?php echo $user_answer; ?>
+                    </td>
+                    <td><?php echo $mark_obtain; ?></td>
+                    <td>
+                        <?php echo $right_answer; ?>
+                    </td>
+                    <td><?php echo $results->positive_mark; ?></td>
+                </tr>
+                <?php $i++; } ?>
+                </tbody>
+            </table>
         </div>
     </div>
-    <div class="row">
-        <div class="col-xs-12">
-            <div class="result-score">
-                <p>Passing Score (<?=$results->pass_mark?>%)</p>
-            </div>
-            <div class="progress progress-striped">
-                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: <?=$results->pass_mark?>%">
-                    <span class="sr-only"><?=$results->pass_mark?>% Complete (success)</span>
-                </div>
-            </div>
-        </div>
-    </div>
+
     <div class="container sign-panel visible-print">
         <div class="col-xs-offset-1 col-xs-5">
             <h4 class="text-center">Signature <?=$this->session->userdata('brand_name')?></h4>

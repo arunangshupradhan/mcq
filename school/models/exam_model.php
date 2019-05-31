@@ -1,5 +1,5 @@
 <?php
-
+error_reporting(E_ALL);
 class Exam_model extends CI_Model
 {
     public function __construct()
@@ -48,7 +48,21 @@ class Exam_model extends CI_Model
                         ->get()->result();
         return $result;
     }
-
+    public function get_online_class_by_id($class_id = 0)
+    {
+        $result = $this->db->select('*')
+            ->from('online_class')
+            ->where('id', $class_id)
+            ->get()->row();
+        return $result;
+    }public function get_course_related_to_online_class_by_id($class_id = 0)
+    {
+        $result = $this->db->select('*')
+            ->from('course_to_online_class')
+            ->where('online_class_id', $class_id)
+            ->get()->result();
+        return $result;
+    }
     public function get_latest_exams($count){
         $result = $this->db->select('*')
                         ->select("exam_title.active AS exam_active")
@@ -85,6 +99,33 @@ class Exam_model extends CI_Model
             ->where('exam_title.price_table_id', $subscription_id)
             ->join('categories', 'categories.category_id = exam_title.category_id')
             ->join('users', 'users.user_id = exam_title.user_id')
+            ->get()->result();
+        return $result;
+    }
+    public function get_subscription($subscription_id)
+    {
+        $result = $this->db->select('*')
+            ->from('price_table')
+            ->where('price_table.price_table_id', $subscription_id)
+            ->get()
+            ->row();
+        return $result;
+    }
+    public function get_online_class_by_subscription_id($subscription_id)
+    {
+        $result = $this->db->select('online_class.*')
+            ->from('course_to_online_class')
+            ->where('course_to_online_class.course_id', $subscription_id)
+            ->join('online_class', 'online_class.id = course_to_online_class.online_class_id')
+            ->get()
+            ->result();
+        return $result;
+    }
+    public function get_features_by_parent_id($id)
+    {
+        $result = $this->db->select('*')
+            ->from('feature_list')
+            ->where('parent_id', $id)
             ->get()->result();
         return $result;
     }
@@ -235,7 +276,25 @@ class Exam_model extends CI_Model
                 ->row();
         return $result;
     }
-
+    public function get_answer_options_by_question_id($ques_id)
+    {
+        $result = $this->db->select('*')
+            ->from('answers')
+            ->where('answers.ques_id', $ques_id)
+            ->get()
+            ->result();
+        return $result;
+    }
+    public function get_user_answer_by_answer_id_and_result_id($result_id,$ans_id)
+    {
+        $result = $this->db->select('*')
+            ->from('user_answer')
+            ->where('user_answer.result_id', $result_id)
+            ->where('user_answer.answer_id', $ans_id)
+            ->get()
+            ->result();
+        return $result;
+    }
     public function get_all_results()
     {
         $result = $this->db->select('*')
@@ -266,17 +325,43 @@ class Exam_model extends CI_Model
 
     public function view_result_detail($id)
     {
-        $result = $this->db->select('*')
-                ->select('result.user_id AS participant_id')
-                ->from('result')
-                ->where('result.result_id', $id)
-                ->join('users', 'users.user_id = result.user_id', 'left')
-                ->join('exam_title', 'exam_title.title_id = result.exam_id', 'left')
-                ->get()
-                ->row();
+    $result = $this->db->select('*')
+        ->select('result.user_id AS participant_id')
+        ->from('result')
+        ->where('result.result_id', $id)
+        ->join('users', 'users.user_id = result.user_id', 'left')
+        ->join('exam_title', 'exam_title.title_id = result.exam_id', 'left')
+        ->get()
+        ->row();
+    return $result;
+    }
+    public function question_list($exam_set_id = 0)
+    {
+    $result = $this->db->select('questions.ques_id,questions.question,questions.exam_id')
+        ->from('questions')
+        ->where('questions.exam_id', $exam_set_id)
+        ->join('exam_title', 'exam_title.title_id = questions.exam_id', 'left')
+        ->get()
+        ->result();
+    return $result;
+    }
+    public function view_answer_detail_by_result_id($id = 0,$user_id = 0)
+    {
+        $result = $this->db->select('
+            result.result_id,
+            result.exam_id,
+            result.user_id
+            
+            ')
+            ->select('result.user_id AS participant_id')
+            ->from('result')
+            ->where('result.result_id', $id)
+            ->where('result.user_id', $user_id)
+            ->join('user_answer', 'user_answer.result_id = result.result_id', 'left')
+            ->get()
+            ->result();
         return $result;
     }
-
     public function get_result_by_id($id)
     {
         $result = $this->db->select('*')
@@ -330,18 +415,52 @@ class Exam_model extends CI_Model
                 }
             }
         }
+        $wrong_answer = $total_ques - $right_ans_count;
         date_default_timezone_set($this->session->userdata['time_zone']);
-        $result = round(($right_ans_count / $total_ques) * 100, 2);
+        $exam_details = array();
+        $exam_details = $this->get_mock_title($exam_id);
+        $positive_mark = $exam_details->positive_mark;
+        $negative_mark = $exam_details->negative_mark;
+        $mark_obtain = ($right_ans_count*$positive_mark) - ($wrong_answer*$negative_mark);
+        if($mark_obtain >= 0){
+            $mark_obtain_sign = '+';
+        }else{
+            $mark_obtain_sign = '-';
+            $mark_obtain = abs($mark_obtain);
+        }
+        $result = round(($mark_obtain / ($total_ques*$positive_mark)) * 100, 2);
         $data = array();
+        $data['mark_obtain_sign'] = $mark_obtain_sign;
         $data['exam_id'] = $exam_id;
-        $data['user_id'] = $this->session->userdata('user_id');
+        $data['user_id'] = $user_id = $this->session->userdata('user_id');
         $data['result_percent'] = $result;
         $data['question_answered'] = $total_ques;
         $data['exam_taken_date'] = date('Y-m-d H:i:s');
+
         $this->db->insert('result', $data);
+        $last_result_id = $this->db->insert_id();
+        /*answer entry for each user*/
+
+        foreach($answer_array as $ans_id_value){
+            $anstwer_entry_data = array();
+            $anstwer_entry_data['user_id'] = $user_id;
+            $anstwer_entry_data['exam_title_id'] = $exam_id;
+            $anstwer_entry_data['answer_id'] = $ans_id_value;
+            $anstwer_entry_data['result_id'] = $last_result_id;
+            $check_answer = $this->get_answer_by_id($ans_id_value);
+            if($check_answer->right_ans){
+                $anstwer_entry_data['operator'] = '+';
+                $anstwer_entry_data['mark'] = $check_answer->positive_mark;
+            }else{
+                $anstwer_entry_data['operator'] = '-';
+                $anstwer_entry_data['mark'] = $check_answer->negative_mark;
+            }
+            $this->db->insert('user_answer', $anstwer_entry_data);
+        }
+        /*answer entry for each user end*/
         if ($this->db->affected_rows() == 1) {
             // $this->sendEmailToAdmin();
-            return $this->db->insert_id();
+            return $last_result_id;
         } else {
             return FALSE;
         }

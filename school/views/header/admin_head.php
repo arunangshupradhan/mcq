@@ -17,6 +17,7 @@
         
 <!-- Admin core CSS -->
 <link href="<?php echo base_url('assets/css/admin.css') ?>" rel="stylesheet" media="screen">
+<link href="<?php echo base_url('assets/css/admin_custom.css') ?>" rel="stylesheet" media="screen">
 
 <!------------- Delete Confirmation ---------------> 
 <script type="text/javascript">

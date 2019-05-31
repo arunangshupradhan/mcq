@@ -27,7 +27,7 @@
             <div  class="header-control btn-group pull-right">
                 <a  class="btn btn-lg btn-block btn-warning course_purchase" href="<?=base_url('index.php/guest/pricing');?>">Upgrade Account</a>
             </div>
-           <?php }elseif( (time()<$user_details->subscription_start) || (time()> $user_details->subscription_end) ){?>
+           <?php }elseif( isset($user_details->subscription_start) && ((time()<$user_details->subscription_start) || (time()> $user_details->subscription_end)) ){?>
                   <div  class="header-control btn-group pull-right">
                       <a  class="btn btn-lg btn-block btn-warning course_purchase" href="<?=base_url('/index.php/membership/payment_process/'.$this->uri->segment('3')) ?>">Purchase</a>
                   </div>

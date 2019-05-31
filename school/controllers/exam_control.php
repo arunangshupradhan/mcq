@@ -1,4 +1,5 @@
 <?php
+error_reporting(0);
 if (!defined('BASEPATH')) {
     exit('No direct script access allowed');
 }
@@ -18,7 +19,7 @@ class Exam_control extends CI_Controller
     public function index()
     {
         if ($this->input->post('token') == $this->session->userdata('token')) {
-            exit('Can\'t re-submit the form');
+            exit('Can\'t re-submit tview_resultshe form');
         }
         if (!$this->session->userdata('log')) {
             redirect(base_url('index.php/login_control'));
@@ -338,6 +339,56 @@ class Exam_control extends CI_Controller
         $data['footer'] = $this->load->view('footer/admin_footer', '', TRUE);
         $this->load->view('dashboard', $data);
     }
+    public function my_course($message = '')
+    {
+        if (!$this->session->userdata('log')) {
+            redirect(base_url('index.php/login_control'));
+        }
+        $userId = $this->session->userdata('user_id');
+        $details = $this->exam_model->get_user_info($userId);
+        $data = array();
+        $data['course'] = $data['course_details'] = $data['online_class_details'] = array();
+        if(($details->subscription_id)&&(time() >= $details->subscription_start) && (time() <= $details->subscription_end) ){
+            $data['course'] = $course = $this->exam_model->get_subscription($details->subscription_id);
+            $data['course_details'] = $this->exam_model->get_features_by_parent_id($course->price_table_id);
+            $data['online_class_details'] = $this->exam_model->get_online_class_by_subscription_id($details->subscription_id);
+        }
+
+
+        $data['class'] = 25; // class control value left digit for main manu rigt digit for submenu
+        $data['header'] = $this->load->view('header/admin_head', '', TRUE);
+        $data['top_navi'] = $this->load->view('header/admin_top_navigation', '', TRUE);
+        $data['sidebar'] = $this->load->view('sidebar/admin_sidebar', $data, TRUE);
+        $data['message'] = $message;
+        $data['content'] = $this->load->view('content/my_course', $data, TRUE);
+        $data['footer'] = $this->load->view('footer/admin_footer', '', TRUE);
+        $this->load->view('dashboard', $data);
+    }
+    public function live_video_class($message = '')
+    {
+        if (!$this->session->userdata('log')) {
+            redirect(base_url('index.php/login_control'));
+        }
+        $userId = $this->session->userdata('user_id');
+        $details = $this->exam_model->get_user_info($userId);
+        $data = array();
+        $data['course'] = $data['course_details'] = $data['online_class_details'] = array();
+        if(($details->subscription_id)&&(time() >= $details->subscription_start) && (time() <= $details->subscription_end) ){
+            $data['course'] = $course = $this->exam_model->get_subscription($details->subscription_id);
+            $data['course_details'] = $this->exam_model->get_features_by_parent_id($course->price_table_id);
+            $data['online_class_details'] = $this->exam_model->get_online_class_by_subscription_id($details->subscription_id);
+        }
+
+
+        $data['class'] = 25; // class control value left digit for main manu rigt digit for submenu
+        $data['header'] = $this->load->view('header/admin_head', '', TRUE);
+        $data['top_navi'] = $this->load->view('header/admin_top_navigation', '', TRUE);
+        $data['sidebar'] = $this->load->view('sidebar/admin_sidebar', $data, TRUE);
+        $data['message'] = $message;
+        $data['content'] = $this->load->view('content/live_video_class', $data, TRUE);
+        $data['footer'] = $this->load->view('footer/admin_footer', '', TRUE);
+        $this->load->view('dashboard', $data);
+    }
 
     public function view_result_detail($id = '', $message = '')
     {
@@ -348,6 +399,7 @@ class Exam_control extends CI_Controller
             show_404();
         }
         $author = $this->exam_model->view_result_detail($id);
+        $exam_set_id = $author->exam_id;
         if (empty($author)) {
             $message = '<div class="alert alert-danger alert-dismissable">'
                     . '<button type="button" class="close" data-dismiss="alert" aria-hidden="TRUE">&times;</button>'
@@ -358,6 +410,31 @@ class Exam_control extends CI_Controller
                 exit('<h2>You are not Authorised person to do this!</h2>');
             } else {
                 $data = array();
+
+                /*answer list*/
+                $question_list = $this->exam_model->question_list($exam_set_id);
+
+                $q = 0;
+                $details_array = array();
+
+                foreach ($question_list as $q_list){
+                    $options = array();
+                    $options = $this->exam_model->get_answer_options_by_question_id($q_list->ques_id);
+                    $details_array[$q] = $q_list;
+                    $k = 0;
+                    $all_option = array();
+                    foreach ($options as $optn){
+
+                        $all_option[$k] = $optn;
+                        $all_option[$k]->ans = $this->exam_model->get_user_answer_by_answer_id_and_result_id($id,$optn->ans_id);
+                        $k++;
+                    }
+                    $details_array[$q]->all_options = $all_option;
+                    $q++;
+                }
+                $data['answer_list'] = $details_array;
+
+                /*answer list end*/
                 $data['class'] = 25; // class control value left digit for main manu rigt digit for submenu
                 $data['header'] = $this->load->view('header/admin_head', '', TRUE);
                 $data['top_navi'] = $this->load->view('header/admin_top_navigation', '', TRUE);
