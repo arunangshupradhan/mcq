@@ -1,14 +1,6 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 /*
-test
-<<<<<<< HEAD
-change from master branch
-=======
-change from branch 1234
->>>>>>> branch-1
-=======
-change from branch 12345
->>>>>>> branch-1
+
 | -------------------------------------------------------------------
 | AUTO-LOADER
 | -------------------------------------------------------------------
