@@ -1,6 +1,7 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 /*
 test
+change from master branch
 | -------------------------------------------------------------------
 | AUTO-LOADER
 | -------------------------------------------------------------------
